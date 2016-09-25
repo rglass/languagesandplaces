@@ -1,13 +1,16 @@
 (ns places.core
-  (:require [ajax.core :refer [GET POST]]))
+  (:require [ajax.core :refer [GET POST]]
+            [cognitect.transit :as t]))
 
 (enable-console-print!)
 
-;; "hits"."hits"."_source"."sourceId"
+(defn id-to-image [id]
+  (str "http://samlinger.natmus.dk/ES/" id "/image/2000/")) ; DNT/24887/image/2000/"
+
 (defn handler [response]
-;;  (.write js/document (:sourceId (:_source (:hits (:hits response))))))
-  (.log js/console (:_source (aget (clj->js response)
-                         "hits" "hits"))))
+  (.log js/console
+        (id-to-image (.. (nth (.. (JSON/parse response) -hits -hits) 0) -_source -sourceId))))
+
 (defn get-natmus-dk []
   (GET "http://samlinger.natmus.dk/api/all/_search"
        {:params {:q "_type:object&collection:es"
@@ -15,7 +18,7 @@
                  :from 0
                  :media "picture"}
         :handler handler
-        :response-format :json}))
+        :response-format :raw}))
 
 (get-natmus-dk)
 

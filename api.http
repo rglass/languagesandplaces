@@ -1,0 +1,1 @@
+GET http://samlinger.natmus.dk/api/all/_search?q=_type:object&collection:es&size=1&from=0&media=picture

@@ -3,10 +3,19 @@
   :url "http://example.com/FIXME"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.229"]
-                 [cljs-ajax "0.5.8"]]
+                 [cljs-ajax "0.5.8"]
+                 [hiccups "0.3.0"]
+                 [lein-figwheel "0.5.4-7"]
+                 [org.clojure/core.async "0.2.391"]]
   :jvm-opts ^:replace ["-Xmx1g" "-server"]
-  :plugins [[lein-npm "0.6.1"]]
+  :plugins [[lein-npm "0.6.1"]
+            [lein-figwheel "0.5.7"]]
   :npm {:dependencies [[source-map-support "0.4.0"]]}
   :source-paths ["src" "target/classes"]
   :clean-targets ["out" "release"]
-  :target-path "target")
+  :target-path "target"
+  :cljsbuild {
+              :builds [ { :id "places" 
+              :source-paths ["src/"]
+              :figwheel true
+              :compiler {  :main "places.core" }}]})

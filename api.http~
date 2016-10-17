@@ -58,33 +58,3 @@ GET http://samlinger.natmus.dk/api/all/_search?q=_type:asset&sourceId:16815
 #
 
 GET https://query.wikidata.org/sparql&format=json&query=SELECT ?P180 WHERE { ?P180 wdt:P195 wd:Q842858 . } LIMIT 10 OFFSET 10
-
-#
-#
-#
-
-GET https://query.wikidata.org/bigdata/namespace/wdq/sparql?query=SELECT ?P180 WHERE { ?P180 wdt:P195 wd:Q842858 . } LIMIT 10 OFFSET 10
-
-#
-#
-#
-
-GET http://www.wikidata.org/entity/Q6025717
-
-#
-#
-#
-
-GET https://query.wikidata.org/bigdata/namespace/wdq/sparql?query=SELECT ?item WHERE { ?item wdt:P195 wd:Q842858 . } LIMIT 10 OFFSET 10&format=json
-
-#
-# ['entities']['Q7917207']['claims']['P180'][0]['mainsnak']['datavalue']['value']['id']
-#
-
-GET https://www.wikidata.org/wiki/Special:EntityData/Q7917207.json
-
-#
-# ['entities']['Q34038']['labels']['sv']['value']
-#
-
-GET https://www.wikidata.org/wiki/Special:EntityData/Q34038.json

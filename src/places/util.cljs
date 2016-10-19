@@ -1,6 +1,7 @@
-(ns places.util)
+(ns places.util
+  (:require-macros [hiccups.core :as hiccups :refer [html]]))
 
-(defn tags [query-fn tags-fn id->tags-fn id->image-fn]
+(defn tags [query-fn id->tags-fn id->image-fn i]
   (let [id (query-fn)
         tags (id->tags-fn id)
         image (id->image-fn id)]

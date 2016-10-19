@@ -1,17 +1,15 @@
 (ns places.dk.natmus
+  (:require-macros [cljs.core.async.macros :refer [go]])
   (:require [places.util :as util]
-            [cljs.core.async.macros :refer [go]]
             [cljs-http.client :as http]
             [cljs.core.async :refer [<!]]))
+
 (def base-url "http://samlinger.natmus.dk")
 (def default-collection "ES")
 (def search-suffix "/api/all/_search?q=")
 
-(defn tags []
-  (util/tags query-id))
-
 (defn id->image [id]
-  (str samlinger-url "/" samlinger-default-collection "/" id "/image/800/"))
+  (str base-url "/" default-collection "/" id "/image/800/"))
 
 (defn extract-id [response]
   (:sourceId (:_source (nth (:hits (:hits (:body response))) 0))))
@@ -34,9 +32,12 @@
   (go
     (let [response 
           (<! (http/get
-               (str samlinger-url 
-                    samlinger-search
+               (str base-url 
+                    search-suffix
                     "_type:asset&sourceId:" id)
                {:content-type "application/json"
                 :with-credentials? false}))]
           (:tags (:_source (nth (:hits (:hits (:body response))) 0))))))
+
+(defn tags [i]
+  (util/tags query-id id->tags id->image i))

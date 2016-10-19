@@ -1,13 +1,14 @@
 (ns places.se.natmus
-  (:require [places.util :as util]))
+  (:require-macros [cljs.core.async.macros :refer [go]])
+  (:require [places.util :as util]
+            [cljs-http.client :as http]
+            [cljs.core.async :refer [<!]]))
 
 (def entity-base-url "https://www.wikidata.org/wiki/Special:EntityData")
 (def base-url "https://query.wikidata.org/bigdata/namespace/wdq/sparql")
 (def sparql-query
   "SELECT ?item WHERE { ?item wdt:P195 wd:Q842858 . } LIMIT 10 OFFSET 10")
 
-(defn tags []
-  (util/tags query-id))
 
 (defn extract-id [response]
   (clojure.string/replace 
@@ -35,8 +36,7 @@
     (let [response 
           (<! (http/get (str entity-base-url "/" entity ".json")
                         {:with-credentials? false}))]
-      (:value (:sv (:labels (get (:entities (:body response) entity))))))))
-
+      (:value (:sv (:labels (get (:entities (:body response)) entity)))))))
 
 ;; Finds the tags with an id as input.
 ;; API Call:
@@ -60,3 +60,6 @@
           (<! (http/get (str entity-base-url "/" id ".json")
                         {:with-credentials? false}))]
       (:value (:datavalue (:mainsnak (nth (get (:claims (get (:entities (:body response)) id)) "P18") 0)))))))
+
+(defn tags [i]
+  (util/tags query-id id->tags id->image i))

@@ -15826,3 +15826,413 @@ notifying browser that file changed:  out/places/core.js
   [1mNo such namespace: places.dk, could not locate places/dk.cljs, places/dk.cljc, or Closure namespace "places.dk" [0m
 
 [36m----  Analysis Error : Please see src/places/core.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.753 seconds.[0m
+notifying browser that file changed:  out/goog/deps.js
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/se/natmus.cljs   line:47  column:22  ----[0m
+
+  [1mUse of undeclared Var places.se.natmus/base-entity[0m
+
+  [36m43[0m  [36m;; Extraction:[0m
+  [36m44[0m  [36m;;   ['entities']['Q7917207']['claims']['P180'][0]['mainsnak']['datavalue']['value']['id'][0m
+  [36m45[0m  [36m(defn id->tags [id][0m
+  [36m46[0m  [36m  (do[0m
+  [33m47[0m  [1m    (.log js/console base-entity)[0m
+  [0m  [0m  [33m                     ^--- Use of undeclared Var places.se.natmus/base-entity[0m
+  [36m48[0m  [36m  (go[0m
+  [36m49[0m  [36m    (let [base-entity [0m
+  [36m50[0m  [36m          (<! (http/get (str entity-base-url "/" id ".json")[0m
+  [36m51[0m  [36m                        {:with-credentials? false}))][0m
+
+[36m----  Compiler Warning : Please see src/places/se/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.71 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.531 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/se/natmus.cljs   line:50  column:29  ----[0m
+
+  [1mUse of undeclared Var places.se.natmus/pprint[0m
+
+  [36m46[0m  [36m  (go[0m
+  [36m47[0m  [36m    (let [base-entity [0m
+  [36m48[0m  [36m          (<! (http/get (str entity-base-url "/" id ".json")[0m
+  [36m49[0m  [36m                        {:with-credentials? false}))][0m
+  [33m50[0m  [1m      (do (.log js/console (pprint base-entity))[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var places.se.natmus/pprint[0m
+  [36m51[0m  [36m      (entity->tag (:id (:value (:datavalue (:mainsnak (nth (get (:claims (get (:entities (:body base-entity)) id)) "P180") 0))))))))))[0m
+  [36m52[0m  [36m[0m
+  [36m53[0m  [36m(def file-url-prefix "https://commons.wikimedia.org/wiki/File:")[0m
+  [36m54[0m  [36m;; https://commons.wikimedia.org/wiki/File:Marcus_Larson_-_Waterfall_in_Sm%C3%A5land_-_Google_Art_Project.jpg[0m
+  [36m55[0m  [36m;; ['entities']['Q7917207']['claims']['P18'][0]['mainsnak']['datavalue']['value'][0m
+
+[36m----  Compiler Warning : Please see src/places/se/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.517 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.457 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.46 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.278 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:12  column:12  ----[0m
+
+  [1mUse of undeclared Var places.core/d[0m
+
+  [36m 8[0m  [36m(enable-console-print!)[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m11[0m  [36m(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [33m12[0m  [1m  (do seq [d dk-nat-tags][0m
+  [0m  [0m  [33m           ^--- Use of undeclared Var places.core/d[0m
+  [36m13[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag (:tag (nth %1 0)))) [0m
+  [36m14[0m  [36m                    (stemmers/lancaster (:tag (nth %1 1))))[0m
+  [36m15[0m  [36m               (:link (:tag (nth %1 0))))) se-nat-tags)))[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn query-images-it [dk-nat-tags-i se-nat-tags-i][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.331 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.262 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:15  column:34  ----[0m
+
+  [1mUse of undeclared Var places.core/%1[0m
+
+  [36m11[0m  [36m(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m12[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m13[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d))) [0m
+  [36m14[0m  [36m                    (stemmers/lancaster (:tag %1))))[0m
+  [33m15[0m  [1m               (:link (:tag (nth %1 0))))) se-nat-tags)))[0m
+  [0m  [0m  [33m                                 ^--- Use of undeclared Var places.core/%1[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn query-images-it [dk-nat-tags-i se-nat-tags-i][0m
+  [36m18[0m  [36m  (let [dk-nat-tags (dk-nat/tags dk-nat-tags-i)[0m
+  [36m19[0m  [36m        se-nat-tags (se-nat/tags se-nat-tags-i)][0m
+  [36m20[0m  [36m    (if (nil? se-nat-tags)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:15  column:34  ----[0m
+
+  [1mUse of undeclared Var places.core/%1[0m
+
+  [36m11[0m  [36m(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m12[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m13[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d))) [0m
+  [36m14[0m  [36m                    (stemmers/lancaster (:tag %1))))[0m
+  [33m15[0m  [1m               (:link (:tag (nth %1 0))))) se-nat-tags)))[0m
+  [0m  [0m  [33m                                 ^--- Use of undeclared Var places.core/%1[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn query-images-it [dk-nat-tags-i se-nat-tags-i][0m
+  [36m18[0m  [36m  (let [dk-nat-tags (dk-nat/tags dk-nat-tags-i)[0m
+  [36m19[0m  [36m        se-nat-tags (se-nat/tags se-nat-tags-i)][0m
+  [36m20[0m  [36m    (if (nil? se-nat-tags)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[31mFailed to compile "main.js" in 0.185 seconds.[0m
+[36m----  Could not Read  src/places/core.cljs   line:15  column:57  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m13[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d))) [0m
+  [36m14[0m  [36m                    (stemmers/lancaster (:tag %1))))[0m
+  [33m15[0m  [1m               (:link (:tag (nth %1 0))))) se-nat-tags)))[0m
+  [0m  [0m  [33m                                                        ^--- Unmatched delimiter )[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn query-images-it [dk-nat-tags-i se-nat-tags-i][0m
+  [36m18[0m  [36m  (let [dk-nat-tags (dk-nat/tags dk-nat-tags-i)[0m
+
+[36m----  Reader Error : Please see src/places/core.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.3 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:12  column:3  ----[0m
+
+  [1mUse of undeclared Var hiccups.runtime/render-attr-map[0m
+
+  [36m 8[0m  [36m    (do (.log js/console tags)[0m
+  [36m 9[0m  [36m  (map (fn [t] {:tag t :link image}) tags))))[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(defn image->link [image][0m
+  [33m12[0m  [1m  (html [:img {:src image}]))[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var hiccups.runtime/render-attr-map[0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.632 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/util.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:11  column:3  ----[0m
+
+  [1mUse of undeclared Var hiccups.runtime/render-attr-map[0m
+
+  [36m 7[0m  [36m        image (id->image-fn id)][0m
+  [36m 8[0m  [36m    (map (fn [t] {:tag t :link image}) tags)))[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn image->link [image][0m
+  [33m11[0m  [1m  (html [:img {:src image}]))[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var hiccups.runtime/render-attr-map[0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.575 seconds.[0m
+notifying browser that file changed:  out/places/util.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.15 seconds.[0m
+[36m----  Could not Analyze  src/places/util.cljs  ----[0m
+
+  [1mInvalid :refer, var cljs.core.async/<!! does not exist [0m
+
+[36m----  Analysis Error : Please see src/places/util.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.188 seconds.[0m
+[36m----  Could not Analyze  src/places/util.cljs  ----[0m
+
+  [1mCould not locate cljs/core/async__init.class or cljs/core/async.clj on classpath.[0m
+
+[36m----  Analysis Error : Please see src/places/util.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.162 seconds.[0m
+[36m----  Could not Analyze  src/places/util.cljs  ----[0m
+
+  [1mInvalid :refer, macro cljs.core.async.macros/<!! does not exist [0m
+
+[36m----  Analysis Error : Please see src/places/util.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.055 seconds.[0m
+[36m----  Could not Analyze  src/places/util.cljs   line:1  column:1  ----[0m
+
+  [1mDon't know how to create ISeq from: clojure.lang.Keyword[0m
+
+  [33m1[0m  [1m(ns places.util[0m
+  [0m [0m  [33m^--- Don't know how to create ISeq from: clojure.lang.Keyword[0m
+  [36m2[0m  [36m  (:require-macros [hiccups.core :as hiccups :refer [html]][0m
+  [36m3[0m  [36m                   [cljs.core.async.macros :refer :all]))[0m
+
+[36m----  Analysis Error : Please see src/places/util.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.049 seconds.[0m
+[36m----  Could not Analyze  src/places/util.cljs   line:1  column:1  ----[0m
+
+  [1mDon't know how to create ISeq from: clojure.lang.Keyword[0m
+
+  [33m1[0m  [1m(ns places.util[0m
+  [0m [0m  [33m^--- Don't know how to create ISeq from: clojure.lang.Keyword[0m
+  [36m2[0m  [36m  (:require-macros [hiccups.core :as hiccups :refer [html]][0m
+  [36m3[0m  [36m                   [cljs.core.async.macros :as async :refer :all]))[0m
+
+[36m----  Analysis Error : Please see src/places/util.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:5  column:13  ----[0m
+
+  [1mUse of undeclared Var places.util/<!![0m
+
+  [36m 1[0m  [36m(ns places.util[0m
+  [36m 2[0m  [36m  (:require-macros [hiccups.core :as hiccups :refer [html]]))[0m
+  [36m 3[0m  [36m[0m
+  [36m 4[0m  [36m(defn tags [query-fn id->tags-fn id->image-fn i][0m
+  [33m 5[0m  [1m  (let [id (<!! (query-fn))[0m
+  [0m  [0m  [33m            ^--- Use of undeclared Var places.util/<!![0m
+  [36m 6[0m  [36m        tags (id->tags-fn id)[0m
+  [36m 7[0m  [36m        image (id->image-fn id)][0m
+  [36m 8[0m  [36m    (map (fn [t] {:tag t :link image}) tags)))[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn image->link [image][0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:11  column:3  ----[0m
+
+  [1mUse of undeclared Var hiccups.runtime/render-attr-map[0m
+
+  [36m 7[0m  [36m        image (id->image-fn id)][0m
+  [36m 8[0m  [36m    (map (fn [t] {:tag t :link image}) tags)))[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn image->link [image][0m
+  [33m11[0m  [1m  (html [:img {:src image}]))[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var hiccups.runtime/render-attr-map[0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.656 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/util.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:6  column:13  ----[0m
+
+  [1mUse of undeclared Var places.util/<!![0m
+
+  [36m 2[0m  [36m  (:require-macros [hiccups.core :as hiccups :refer [html]])[0m
+  [36m 3[0m  [36m  (:require [cljs.core.async :refer [<!]]))[0m
+  [36m 4[0m  [36m[0m
+  [36m 5[0m  [36m(defn tags [query-fn id->tags-fn id->image-fn i][0m
+  [33m 6[0m  [1m  (let [id (<!! (query-fn))[0m
+  [0m  [0m  [33m            ^--- Use of undeclared Var places.util/<!![0m
+  [36m 7[0m  [36m        tags (id->tags-fn id)[0m
+  [36m 8[0m  [36m        image (id->image-fn id)][0m
+  [36m 9[0m  [36m    (map (fn [t] {:tag t :link image}) tags)))[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(defn image->link [image][0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:12  column:3  ----[0m
+
+  [1mUse of undeclared Var hiccups.runtime/render-attr-map[0m
+
+  [36m 8[0m  [36m        image (id->image-fn id)][0m
+  [36m 9[0m  [36m    (map (fn [t] {:tag t :link image}) tags)))[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(defn image->link [image][0m
+  [33m12[0m  [1m  (html [:img {:src image}]))[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var hiccups.runtime/render-attr-map[0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.473 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/util.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.142 seconds.[0m
+[36m----  Could not Analyze  src/places/util.cljs  ----[0m
+
+  [1mInvalid :refer, var cljs.core.async/<!! does not exist [0m
+
+[36m----  Analysis Error : Please see src/places/util.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:6  column:13  ----[0m
+
+  [1mUse of undeclared Var places.util/<!![0m
+
+  [36m 2[0m  [36m  (:require-macros [hiccups.core :as hiccups :refer [html]])[0m
+  [36m 3[0m  [36m  (:require [cljs.core.async :refer [<!]]))[0m
+  [36m 4[0m  [36m[0m
+  [36m 5[0m  [36m(defn tags [query-fn id->tags-fn id->image-fn i][0m
+  [33m 6[0m  [1m  (let [id (<!! (query-fn))[0m
+  [0m  [0m  [33m            ^--- Use of undeclared Var places.util/<!![0m
+  [36m 7[0m  [36m        tags (id->tags-fn id)[0m
+  [36m 8[0m  [36m        image (id->image-fn id)][0m
+  [36m 9[0m  [36m    (map (fn [t] {:tag t :link image}) tags)))[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(defn image->link [image][0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:12  column:3  ----[0m
+
+  [1mUse of undeclared Var hiccups.runtime/render-attr-map[0m
+
+  [36m 8[0m  [36m        image (id->image-fn id)][0m
+  [36m 9[0m  [36m    (map (fn [t] {:tag t :link image}) tags)))[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(defn image->link [image][0m
+  [33m12[0m  [1m  (html [:img {:src image}]))[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var hiccups.runtime/render-attr-map[0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.552 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/util.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:12  column:3  ----[0m
+
+  [1mUse of undeclared Var hiccups.runtime/render-attr-map[0m
+
+  [36m 8[0m  [36m        image (id->image-fn id)][0m
+  [36m 9[0m  [36m    (map (fn [t] {:tag t :link image}) tags)))[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(defn image->link [image][0m
+  [33m12[0m  [1m  (html [:img {:src image}]))[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var hiccups.runtime/render-attr-map[0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.449 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/util.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:6  column:4  ----[0m
+
+  [1mUse of undeclared Var places.util/go[0m
+
+  [36m 2[0m  [36m  (:require-macros [hiccups.core :as hiccups :refer [html]])[0m
+  [36m 3[0m  [36m  (:require [cljs.core.async :refer [<!]]))[0m
+  [36m 4[0m  [36m[0m
+  [36m 5[0m  [36m(defn tags [query-fn id->tags-fn id->image-fn i][0m
+  [33m 6[0m  [1m  (go (let [id (<! (query-fn))[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var places.util/go[0m
+  [36m 7[0m  [36m        tags (id->tags-fn id)[0m
+  [36m 8[0m  [36m        image (id->image-fn id)][0m
+  [36m 9[0m  [36m    (map (fn [t] {:tag t :link image}) tags))))[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(defn image->link [image][0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:12  column:3  ----[0m
+
+  [1mUse of undeclared Var hiccups.runtime/render-attr-map[0m
+
+  [36m 8[0m  [36m        image (id->image-fn id)][0m
+  [36m 9[0m  [36m    (map (fn [t] {:tag t :link image}) tags))))[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(defn image->link [image][0m
+  [33m12[0m  [1m  (html [:img {:src image}]))[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var hiccups.runtime/render-attr-map[0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.506 seconds.[0m
+notifying browser that file changed:  out/places/util.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:13  column:3  ----[0m
+
+  [1mUse of undeclared Var hiccups.runtime/render-attr-map[0m
+
+  [36m 9[0m  [36m        image (id->image-fn id)][0m
+  [36m10[0m  [36m    (map (fn [t] {:tag t :link image}) tags))))[0m
+  [36m11[0m  [36m[0m
+  [36m12[0m  [36m(defn image->link [image][0m
+  [33m13[0m  [1m  (html [:img {:src image}]))[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var hiccups.runtime/render-attr-map[0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.479 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/util.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:13  column:3  ----[0m
+
+  [1mUse of undeclared Var hiccups.runtime/render-attr-map[0m
+
+  [36m 9[0m  [36m        image (<! (id->image-fn id))][0m
+  [36m10[0m  [36m    (map (fn [t] {:tag t :link image}) tags))))[0m
+  [36m11[0m  [36m[0m
+  [36m12[0m  [36m(defn image->link [image][0m
+  [33m13[0m  [1m  (html [:img {:src image}]))[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var hiccups.runtime/render-attr-map[0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.545 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/util.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:14  column:3  ----[0m
+
+  [1mUse of undeclared Var hiccups.runtime/render-attr-map[0m
+
+  [36m10[0m  [36m        (do (prn tags)[0m
+  [36m11[0m  [36m    (map (fn [t] {:tag t :link image}) tags)))))[0m
+  [36m12[0m  [36m[0m
+  [36m13[0m  [36m(defn image->link [image][0m
+  [33m14[0m  [1m  (html [:img {:src image}]))[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var hiccups.runtime/render-attr-map[0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.482 seconds.[0m
+notifying browser that file changed:  out/places/util.js

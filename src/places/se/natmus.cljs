@@ -9,7 +9,6 @@
 (def sparql-query
   "SELECT ?item WHERE { ?item wdt:P195 wd:Q842858 . } LIMIT 10 OFFSET 10")
 
-
 (defn extract-id [response]
   (clojure.string/replace 
    (:value (:item (nth (:bindings (:results (:body response))) 0)))
@@ -48,8 +47,8 @@
     (let [base-entity 
           (<! (http/get (str entity-base-url "/" id ".json")
                         {:with-credentials? false}))]
-      
-      (entity->tag (:id (:value (:datavalue (:mainsnak (nth (get (:claims (get (:entities (:body base-entity)) id)) "P180") 0)))))))))
+      (do (.log js/console (:body base-entity))
+      (entity->tag (:id (:value (:datavalue (:mainsnak (nth (get (:claims (get (:entities (:body base-entity)) id)) "P180") 0))))))))))
 
 (def file-url-prefix "https://commons.wikimedia.org/wiki/File:")
 ;; https://commons.wikimedia.org/wiki/File:Marcus_Larson_-_Waterfall_in_Sm%C3%A5land_-_Google_Art_Project.jpg

@@ -7,15 +7,12 @@
 
 (enable-console-print!)
 
+;; Return the link if the stem of the Danish and Swedish word is the same
 (defn reduce-tags [dk-nat-tags se-nat-tags]
-  (reduce 
-   ;; Return the link if the stem of the Danish and Swedish word is the same
-   #((do
-       (.log js/console (str "Compare stems: " (stemmers/lancaster (:tag (nth %1 0))) ", " (stemmers/lancaster (nth %1 1))))
-       (if (= (stemmers/lancaster (:tag (:tag (nth %1 0)))) (stemmers/lancaster (:tag (nth %1 1))))
-         (:link (:tag (nth %1 0))
-         nil))))
-   [dk-nat-tags se-nat-tags]))
+  (doseq [d dk-nat-tags]
+   (reduce #((if (= (stemmers/lancaster (:tag d)) 
+                    (stemmers/lancaster (:tag %1)))
+               (:link (:tag (nth %1 0))))) se-nat-tags)))
 
 (defn query-images-it [dk-nat-tags-i se-nat-tags-i]
   (let [dk-nat-tags (dk-nat/tags dk-nat-tags-i)

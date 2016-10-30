@@ -1,10 +1,12 @@
 (ns places.util
   (:require-macros [hiccups.core :as hiccups :refer [html]]
                    [cljs.core.async.macros :refer [go]])
-  (:require [cljs.core.async :refer [<!]]))
+  (:require [hiccups.runtime :as hiccupsrt]
+            [cljs.core.async :refer [<!]]))
 
-(defn tags [query-fn id->tags-fn id->image-fn i]
-  (go (let [id (<! (query-fn))
+#_(defn tags [query-fn id->tags-fn id->image-fn i]
+  (let [out (chan)]
+    (let [id (<! (query-fn))
             tags (<! (id->tags-fn id))
             image (<! (id->image-fn id))]
         (do (prn tags)

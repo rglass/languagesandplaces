@@ -16236,3 +16236,2301 @@ notifying browser that file changed:  out/places/util.js
 [36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
 [32mSuccessfully compiled "main.js" in 0.482 seconds.[0m
 notifying browser that file changed:  out/places/util.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:7  column:14  ----[0m
+
+  [1mUse of undeclared Var places.util/chan[0m
+
+  [36m 3[0m  [36m                   [cljs.core.async.macros :refer [go]])[0m
+  [36m 4[0m  [36m  (:require [cljs.core.async :refer [<!]]))[0m
+  [36m 5[0m  [36m[0m
+  [36m 6[0m  [36m(defn tags [query-fn id->tags-fn id->image-fn i][0m
+  [33m 7[0m  [1m  (let [out (chan)][0m
+  [0m  [0m  [33m             ^--- Use of undeclared Var places.util/chan[0m
+  [36m 8[0m  [36m    (let [id (<! (query-fn))[0m
+  [36m 9[0m  [36m            tags (<! (id->tags-fn id))[0m
+  [36m10[0m  [36m            image (<! (id->image-fn id))][0m
+  [36m11[0m  [36m        (do (prn tags)[0m
+  [36m12[0m  [36m    (map (fn [t] {:tag t :link image}) tags)))))[0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:15  column:3  ----[0m
+
+  [1mUse of undeclared Var hiccups.runtime/render-attr-map[0m
+
+  [36m11[0m  [36m        (do (prn tags)[0m
+  [36m12[0m  [36m    (map (fn [t] {:tag t :link image}) tags)))))[0m
+  [36m13[0m  [36m[0m
+  [36m14[0m  [36m(defn image->link [image][0m
+  [33m15[0m  [1m  (html [:img {:src image}]))[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var hiccups.runtime/render-attr-map[0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:19  column:10  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/put![0m
+
+  [36m15[0m  [36m  (:sourceId (:_source (nth (:hits (:hits (:body response))) 0))))[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn query-id []  [0m
+  [36m18[0m  [36m  (let [response [0m
+  [33m19[0m  [1m        (put!  (http/get (str base-url [0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var places.dk.natmus/put![0m
+  [36m20[0m  [36m                             search-suffix[0m
+  [36m21[0m  [36m                             "_type:object&collection:es")[0m
+  [36m22[0m  [36m                        {:query-params {:size 1[0m
+  [36m23[0m  [36m                                        :from 0[0m
+  [36m24[0m  [36m                                        :media "picture"}[0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[31mFailed to compile "main.js" in 1.274 seconds.[0m
+[36m----  Could not Read  src/places/dk/natmus.cljs   line:27  column:31  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m25[0m  [36m                         :content-type "application/json"[0m
+  [36m26[0m  [36m                         :with-credentials? false}))][0m
+  [33m27[0m  [1m      (extract-id response))))[0m
+  [0m  [0m  [33m                              ^--- Unmatched delimiter )[0m
+  [36m28[0m  [36m[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn id->tags [id][0m
+
+[36m----  Reader Error : Please see src/places/dk/natmus.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:19  column:10  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/put![0m
+
+  [36m15[0m  [36m  (:sourceId (:_source (nth (:hits (:hits (:body response))) 0))))[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn query-id []  [0m
+  [36m18[0m  [36m  (let [response [0m
+  [33m19[0m  [1m        (put!  (http/get (str base-url [0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var places.dk.natmus/put![0m
+  [36m20[0m  [36m                             search-suffix[0m
+  [36m21[0m  [36m                             "_type:object&collection:es")[0m
+  [36m22[0m  [36m                        {:query-params {:size 1[0m
+  [36m23[0m  [36m                                        :from 0[0m
+  [36m24[0m  [36m                                        :media "picture"}[0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[31mFailed to compile "main.js" in 0.313 seconds.[0m
+[36m----  Could not Read  src/places/dk/natmus.cljs   line:27  column:31  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m25[0m  [36m                         :content-type "application/json"[0m
+  [36m26[0m  [36m                         :with-credentials? false}))][0m
+  [33m27[0m  [1m      (extract-id response))))[0m
+  [0m  [0m  [33m                              ^--- Unmatched delimiter )[0m
+  [36m28[0m  [36m[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn id->tags [id][0m
+
+[36m----  Reader Error : Please see src/places/dk/natmus.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.322 seconds.[0m
+[36m----  Could not Analyze  src/places/dk/natmus.cljs   line:18  column:3  ----[0m
+
+  [1mlet requires an even number of forms in binding vector[0m
+
+  [36m17[0m  [36m(defn query-id []  [0m
+  [33m18[0m  [1m  (let [out][0m
+  [0m  [0m  [33m  ^--- let requires an even number of forms in binding vector[0m
+  [36m19[0m  [36m        (put! out (http/get (str base-url [0m
+  [36m20[0m  [36m                       search-suffix[0m
+  [36m21[0m  [36m                       "_type:object&collection:es")[0m
+
+[36m----  Analysis Error : Please see src/places/dk/natmus.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.215 seconds.[0m
+[36m----  Could not Analyze  src/places/dk/natmus.cljs   line:18  column:3  ----[0m
+
+  [1mlet requires an even number of forms in binding vector[0m
+
+  [36m17[0m  [36m(defn query-id []  [0m
+  [33m18[0m  [1m  (let [out][0m
+  [0m  [0m  [33m  ^--- let requires an even number of forms in binding vector[0m
+  [36m19[0m  [36m        (put! out (http/get (str base-url [0m
+  [36m20[0m  [36m                       search-suffix[0m
+  [36m21[0m  [36m                       "_type:object&collection:es")[0m
+
+[36m----  Analysis Error : Please see src/places/dk/natmus.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.171 seconds.[0m
+[36m----  Could not Analyze  src/places/dk/natmus.cljs   line:18  column:3  ----[0m
+
+  [1mlet requires an even number of forms in binding vector[0m
+
+  [36m17[0m  [36m(defn query-id []  [0m
+  [33m18[0m  [1m  (let [out][0m
+  [0m  [0m  [33m  ^--- let requires an even number of forms in binding vector[0m
+  [36m19[0m  [36m        (put! out (http/get (str base-url [0m
+  [36m20[0m  [36m                       search-suffix[0m
+  [36m21[0m  [36m                       "_type:object&collection:es")[0m
+
+[36m----  Analysis Error : Please see src/places/dk/natmus.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.211 seconds.[0m
+[36m----  Could not Analyze  src/places/dk/natmus.cljs   line:18  column:3  ----[0m
+
+  [1mlet requires an even number of forms in binding vector[0m
+
+  [36m17[0m  [36m(defn query-id []  [0m
+  [33m18[0m  [1m  (let [out][0m
+  [0m  [0m  [33m  ^--- let requires an even number of forms in binding vector[0m
+  [36m19[0m  [36m        (put! out (http/get (str base-url [0m
+  [36m20[0m  [36m                       search-suffix[0m
+  [36m21[0m  [36m                       "_type:object&collection:es")[0m
+
+[36m----  Analysis Error : Please see src/places/dk/natmus.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.344 seconds.[0m
+notifying browser that file changed:  out/goog/deps.js
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:31  column:20  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/response[0m
+
+  [36m27[0m  [36m        out))[0m
+  [36m28[0m  [36m[0m
+  [36m29[0m  [36m(defn extracted-id [][0m
+  [36m30[0m  [36m (go [0m
+  [33m31[0m  [1m   (extract-id (<! response))))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var places.dk.natmus/response[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m[0m
+  [36m34[0m  [36m#_(defn id->tags [id][0m
+  [36m35[0m  [36m  (go[0m
+  [36m36[0m  [36m    (let [response [0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:31  column:5  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/extract-id[0m
+
+  [36m27[0m  [36m        out))[0m
+  [36m28[0m  [36m[0m
+  [36m29[0m  [36m(defn extracted-id [][0m
+  [36m30[0m  [36m (go [0m
+  [33m31[0m  [1m   (extract-id (<! response))))[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var places.dk.natmus/extract-id[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m[0m
+  [36m34[0m  [36m#_(defn id->tags [id][0m
+  [36m35[0m  [36m  (go[0m
+  [36m36[0m  [36m    (let [response [0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.499 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.221 seconds.[0m
+[36m----  Could not Analyze  src/places/dk/natmus.cljs   line:18  column:3  ----[0m
+
+  [1mlet requires an even number of forms in binding vector[0m
+
+  [36m17[0m  [36m(defn query-id []  [0m
+  [33m18[0m  [1m  (let [out][0m
+  [0m  [0m  [33m  ^--- let requires an even number of forms in binding vector[0m
+  [36m19[0m  [36m        (put! out (http/get (str base-url [0m
+  [36m20[0m  [36m                       search-suffix[0m
+  [36m21[0m  [36m                       "_type:object&collection:es")[0m
+
+[36m----  Analysis Error : Please see src/places/dk/natmus.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.303 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:10  column:2  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/extracted-id[0m
+
+  [36m 6[0m  [36m            [clj-fuzzy.stemmers :as stemmers]))[0m
+  [36m 7[0m  [36m[0m
+  [36m 8[0m  [36m(enable-console-print!)[0m
+  [36m 9[0m  [36m[0m
+  [33m10[0m  [1m(dk-nat/extracted-id)[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var places.dk.natmus/extracted-id[0m
+  [36m11[0m  [36m[0m
+  [36m12[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m13[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m14[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m15[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d)) [0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:10  column:2  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/extracted-id[0m
+
+  [36m 6[0m  [36m            [clj-fuzzy.stemmers :as stemmers]))[0m
+  [36m 7[0m  [36m[0m
+  [36m 8[0m  [36m(enable-console-print!)[0m
+  [36m 9[0m  [36m[0m
+  [33m10[0m  [1m(dk-nat/extracted-id)[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var places.dk.natmus/extracted-id[0m
+  [36m11[0m  [36m[0m
+  [36m12[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m13[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m14[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m15[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d)) [0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.384 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:10  column:19  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/extracted-id[0m
+
+  [36m 6[0m  [36m            [clj-fuzzy.stemmers :as stemmers]))[0m
+  [36m 7[0m  [36m[0m
+  [36m 8[0m  [36m(enable-console-print!)[0m
+  [36m 9[0m  [36m[0m
+  [33m10[0m  [1m(.log js/console (dk-nat/extracted-id))[0m
+  [0m  [0m  [33m                  ^--- Use of undeclared Var places.dk.natmus/extracted-id[0m
+  [36m11[0m  [36m[0m
+  [36m12[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m13[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m14[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m15[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d)) [0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:10  column:19  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/extracted-id[0m
+
+  [36m 6[0m  [36m            [clj-fuzzy.stemmers :as stemmers]))[0m
+  [36m 7[0m  [36m[0m
+  [36m 8[0m  [36m(enable-console-print!)[0m
+  [36m 9[0m  [36m[0m
+  [33m10[0m  [1m(.log js/console (dk-nat/extracted-id))[0m
+  [0m  [0m  [33m                  ^--- Use of undeclared Var places.dk.natmus/extracted-id[0m
+  [36m11[0m  [36m[0m
+  [36m12[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m13[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m14[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m15[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d)) [0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.343 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.209 seconds.[0m
+[36m----  Could not Analyze  src/places/core.cljs  ----[0m
+
+  [1mNo such namespace: dk.natmus, could not locate dk/natmus.cljs, dk/natmus.cljc, or Closure namespace "dk.natmus" [0m
+
+[36m----  Analysis Error : Please see src/places/core.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:10  column:19  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/extracted-id[0m
+
+  [36m 6[0m  [36m            [clj-fuzzy.stemmers :as stemmers]))[0m
+  [36m 7[0m  [36m[0m
+  [36m 8[0m  [36m(enable-console-print!)[0m
+  [36m 9[0m  [36m[0m
+  [33m10[0m  [1m(.log js/console (dk-nat/extracted-id))[0m
+  [0m  [0m  [33m                  ^--- Use of undeclared Var places.dk.natmus/extracted-id[0m
+  [36m11[0m  [36m[0m
+  [36m12[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m13[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m14[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m15[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d)) [0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:10  column:19  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/extracted-id[0m
+
+  [36m 6[0m  [36m            [clj-fuzzy.stemmers :as stemmers]))[0m
+  [36m 7[0m  [36m[0m
+  [36m 8[0m  [36m(enable-console-print!)[0m
+  [36m 9[0m  [36m[0m
+  [33m10[0m  [1m(.log js/console (dk-nat/extracted-id))[0m
+  [0m  [0m  [33m                  ^--- Use of undeclared Var places.dk.natmus/extracted-id[0m
+  [36m11[0m  [36m[0m
+  [36m12[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m13[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m14[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m15[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d)) [0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.458 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.204 seconds.[0m
+[36m----  Could not Analyze  src/places/dk/natmus.cljs   line:18  column:3  ----[0m
+
+  [1mlet requires an even number of forms in binding vector[0m
+
+  [36m17[0m  [36m(defn query-id []  [0m
+  [33m18[0m  [1m  (let [out][0m
+  [0m  [0m  [33m  ^--- let requires an even number of forms in binding vector[0m
+  [36m19[0m  [36m        (put! out (http/get (str base-url [0m
+  [36m20[0m  [36m                       search-suffix[0m
+  [36m21[0m  [36m                       "_type:object&collection:es")[0m
+
+[36m----  Analysis Error : Please see src/places/dk/natmus.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:18  column:14  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/chan[0m
+
+  [36m14[0m  [36m#_(defn extract-id [response][0m
+  [36m15[0m  [36m  (:sourceId (:_source (nth (:hits (:hits (:body response))) 0))))[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn query-id []  [0m
+  [33m18[0m  [1m  (let [out (chan)][0m
+  [0m  [0m  [33m             ^--- Use of undeclared Var places.dk.natmus/chan[0m
+  [36m19[0m  [36m        (put! out (http/get (str base-url [0m
+  [36m20[0m  [36m                       search-suffix[0m
+  [36m21[0m  [36m                       "_type:object&collection:es")[0m
+  [36m22[0m  [36m                  {:query-params {:size 1[0m
+  [36m23[0m  [36m                                  :from 0[0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:19  column:10  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/put![0m
+
+  [36m15[0m  [36m  (:sourceId (:_source (nth (:hits (:hits (:body response))) 0))))[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn query-id []  [0m
+  [36m18[0m  [36m  (let [out (chan)][0m
+  [33m19[0m  [1m        (put! out (http/get (str base-url [0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var places.dk.natmus/put![0m
+  [36m20[0m  [36m                       search-suffix[0m
+  [36m21[0m  [36m                       "_type:object&collection:es")[0m
+  [36m22[0m  [36m                  {:query-params {:size 1[0m
+  [36m23[0m  [36m                                  :from 0[0m
+  [36m24[0m  [36m                                  :media "picture"}[0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:31  column:5  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/extract-id[0m
+
+  [36m27[0m  [36m        out))[0m
+  [36m28[0m  [36m[0m
+  [36m29[0m  [36m(defn extracted-id [][0m
+  [36m30[0m  [36m (go [0m
+  [33m31[0m  [1m   (extract-id (<! (query-id)))))[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var places.dk.natmus/extract-id[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m[0m
+  [36m34[0m  [36m#_(defn id->tags [id][0m
+  [36m35[0m  [36m  (go[0m
+  [36m36[0m  [36m    (let [response [0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.497 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.069 seconds.[0m
+[36m----  Could not Analyze  src/places/dk/natmus.cljs   line:1  column:1  ----[0m
+
+  [1mOnly :as alias, :refer (names) and :rename {from to} options supported in :require; offending spec: [cljs.core.async :refer [<!] chan] at line 1 src/places/dk/natmus.cljs[0m
+
+  [33m1[0m  [1m(ns places.dk.natmus[0m
+  [0m [0m  [33m^--- Only :as alias, :refer (names) and :rename {from to} options supported in :require; offending spec: [cljs.core.async :refer [<!] chan] at line 1 src/places/dk/natmus.cljs[0m
+  [36m2[0m  [36m  (:require-macros [cljs.core.async.macros :refer [go]])[0m
+  [36m3[0m  [36m  (:require [places.util :as util][0m
+  [36m4[0m  [36m            [cljs-http.client :as http][0m
+
+[36m----  Analysis Error : Please see src/places/dk/natmus.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.066 seconds.[0m
+[36m----  Could not Analyze  src/places/dk/natmus.cljs   line:1  column:1  ----[0m
+
+  [1mOnly :as alias, :refer (names) and :rename {from to} options supported in :require; offending spec: [cljs.core.async :refer [<!] [chan]] at line 1 src/places/dk/natmus.cljs[0m
+
+  [33m1[0m  [1m(ns places.dk.natmus[0m
+  [0m [0m  [33m^--- Only :as alias, :refer (names) and :rename {from to} options supported in :require; offending spec: [cljs.core.async :refer [<!] [chan]] at line 1 src/places/dk/natmus.cljs[0m
+  [36m2[0m  [36m  (:require-macros [cljs.core.async.macros :refer [go]])[0m
+  [36m3[0m  [36m  (:require [places.util :as util][0m
+  [36m4[0m  [36m            [cljs-http.client :as http][0m
+
+[36m----  Analysis Error : Please see src/places/dk/natmus.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:18  column:14  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/chan[0m
+
+  [36m14[0m  [36m#_(defn extract-id [response][0m
+  [36m15[0m  [36m  (:sourceId (:_source (nth (:hits (:hits (:body response))) 0))))[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn query-id []  [0m
+  [33m18[0m  [1m  (let [out (chan)][0m
+  [0m  [0m  [33m             ^--- Use of undeclared Var places.dk.natmus/chan[0m
+  [36m19[0m  [36m        (put! out (http/get (str base-url [0m
+  [36m20[0m  [36m                       search-suffix[0m
+  [36m21[0m  [36m                       "_type:object&collection:es")[0m
+  [36m22[0m  [36m                  {:query-params {:size 1[0m
+  [36m23[0m  [36m                                  :from 0[0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:19  column:10  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/put![0m
+
+  [36m15[0m  [36m  (:sourceId (:_source (nth (:hits (:hits (:body response))) 0))))[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn query-id []  [0m
+  [36m18[0m  [36m  (let [out (chan)][0m
+  [33m19[0m  [1m        (put! out (http/get (str base-url [0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var places.dk.natmus/put![0m
+  [36m20[0m  [36m                       search-suffix[0m
+  [36m21[0m  [36m                       "_type:object&collection:es")[0m
+  [36m22[0m  [36m                  {:query-params {:size 1[0m
+  [36m23[0m  [36m                                  :from 0[0m
+  [36m24[0m  [36m                                  :media "picture"}[0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:31  column:5  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/extract-id[0m
+
+  [36m27[0m  [36m        out))[0m
+  [36m28[0m  [36m[0m
+  [36m29[0m  [36m(defn extracted-id [][0m
+  [36m30[0m  [36m (go [0m
+  [33m31[0m  [1m   (extract-id (<! (query-id)))))[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var places.dk.natmus/extract-id[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m[0m
+  [36m34[0m  [36m#_(defn id->tags [id][0m
+  [36m35[0m  [36m  (go[0m
+  [36m36[0m  [36m    (let [response [0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.49 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:19  column:10  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/put![0m
+
+  [36m15[0m  [36m  (:sourceId (:_source (nth (:hits (:hits (:body response))) 0))))[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn query-id []  [0m
+  [36m18[0m  [36m  (let [out (chan)][0m
+  [33m19[0m  [1m        (put! out (http/get (str base-url [0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var places.dk.natmus/put![0m
+  [36m20[0m  [36m                       search-suffix[0m
+  [36m21[0m  [36m                       "_type:object&collection:es")[0m
+  [36m22[0m  [36m                  {:query-params {:size 1[0m
+  [36m23[0m  [36m                                  :from 0[0m
+  [36m24[0m  [36m                                  :media "picture"}[0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:31  column:5  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/extract-id[0m
+
+  [36m27[0m  [36m        out))[0m
+  [36m28[0m  [36m[0m
+  [36m29[0m  [36m(defn extracted-id [][0m
+  [36m30[0m  [36m (go [0m
+  [33m31[0m  [1m   (extract-id (<! (query-id)))))[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var places.dk.natmus/extract-id[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m[0m
+  [36m34[0m  [36m#_(defn id->tags [id][0m
+  [36m35[0m  [36m  (go[0m
+  [36m36[0m  [36m    (let [response [0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.327 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:31  column:5  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/extract-id[0m
+
+  [36m27[0m  [36m        out))[0m
+  [36m28[0m  [36m[0m
+  [36m29[0m  [36m(defn extracted-id [][0m
+  [36m30[0m  [36m (go [0m
+  [33m31[0m  [1m   (extract-id (<! (query-id)))))[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var places.dk.natmus/extract-id[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m[0m
+  [36m34[0m  [36m#_(defn id->tags [id][0m
+  [36m35[0m  [36m  (go[0m
+  [36m36[0m  [36m    (let [response [0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.344 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.262 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.272 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.273 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:18  column:4  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/>![0m
+
+  [36m14[0m  [36m(defn extract-id [response][0m
+  [36m15[0m  [36m  (:sourceId (:_source (nth (:hits (:hits (:body response))) 0))))[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn query-id [out]  [0m
+  [33m18[0m  [1m  (>! out (http/get (str base-url [0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var places.dk.natmus/>![0m
+  [36m19[0m  [36m                       search-suffix[0m
+  [36m20[0m  [36m                       "_type:object&collection:es")[0m
+  [36m21[0m  [36m                  {:query-params {:size 1[0m
+  [36m22[0m  [36m                                  :from 0[0m
+  [36m23[0m  [36m                                  :media "picture"}[0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.295 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.273 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.25 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:10  column:19  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/extracted-id[0m
+
+  [36m 6[0m  [36m            [clj-fuzzy.stemmers :as stemmers]))[0m
+  [36m 7[0m  [36m[0m
+  [36m 8[0m  [36m(enable-console-print!)[0m
+  [36m 9[0m  [36m[0m
+  [33m10[0m  [1m(.log js/console (dk-nat/extracted-id))[0m
+  [0m  [0m  [33m                  ^--- Use of undeclared Var places.dk.natmus/extracted-id[0m
+  [36m11[0m  [36m[0m
+  [36m12[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m13[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m14[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m15[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d)) [0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:10  column:19  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/extracted-id[0m
+
+  [36m 6[0m  [36m            [clj-fuzzy.stemmers :as stemmers]))[0m
+  [36m 7[0m  [36m[0m
+  [36m 8[0m  [36m(enable-console-print!)[0m
+  [36m 9[0m  [36m[0m
+  [33m10[0m  [1m(.log js/console (dk-nat/extracted-id))[0m
+  [0m  [0m  [33m                  ^--- Use of undeclared Var places.dk.natmus/extracted-id[0m
+  [36m11[0m  [36m[0m
+  [36m12[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m13[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m14[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m15[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d)) [0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.336 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.291 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.161 seconds.[0m
+[36m----  Could not Analyze  src/places/dk/natmus.cljs  ----[0m
+
+  [1mInvalid :refer, var cljs.core.async/go does not exist [0m
+
+[36m----  Analysis Error : Please see src/places/dk/natmus.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.294 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.225 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.218 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.275 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.211 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.227 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:11  column:2  ----[0m
+
+  [1mUse of undeclared Var places.core/go[0m
+
+  [36m 8[0m  [36m(enable-console-print!)[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(.log js/console "start")[0m
+  [33m11[0m  [1m(go[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var places.core/go[0m
+  [36m12[0m  [36m  (<! dk-nat/query-id))[0m
+  [36m13[0m  [36m(.log js/console "end")[0m
+  [36m14[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m15[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m16[0m  [36m  (doseq [d dk-nat-tags][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:12  column:4  ----[0m
+
+  [1mUse of undeclared Var places.core/<![0m
+
+  [36m 8[0m  [36m(enable-console-print!)[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(.log js/console "start")[0m
+  [36m11[0m  [36m(go[0m
+  [33m12[0m  [1m  (<! dk-nat/query-id))[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var places.core/<![0m
+  [36m13[0m  [36m(.log js/console "end")[0m
+  [36m14[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m15[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m16[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m17[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d)) [0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:11  column:2  ----[0m
+
+  [1mUse of undeclared Var places.core/go[0m
+
+  [36m 8[0m  [36m(enable-console-print!)[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(.log js/console "start")[0m
+  [33m11[0m  [1m(go[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var places.core/go[0m
+  [36m12[0m  [36m  (<! dk-nat/query-id))[0m
+  [36m13[0m  [36m(.log js/console "end")[0m
+  [36m14[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m15[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m16[0m  [36m  (doseq [d dk-nat-tags][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:12  column:4  ----[0m
+
+  [1mUse of undeclared Var places.core/<![0m
+
+  [36m 8[0m  [36m(enable-console-print!)[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(.log js/console "start")[0m
+  [36m11[0m  [36m(go[0m
+  [33m12[0m  [1m  (<! dk-nat/query-id))[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var places.core/<![0m
+  [36m13[0m  [36m(.log js/console "end")[0m
+  [36m14[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m15[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m16[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m17[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d)) [0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.38 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:13  column:6  ----[0m
+
+  [1mUse of undeclared Var places.core/go[0m
+
+  [36m10[0m  [36m(.log js/console "start")[0m
+  [36m11[0m  [36m(defn make-go [][0m
+  [36m12[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [33m13[0m  [1m    (go[0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var places.core/go[0m
+  [36m14[0m  [36m      (<! out))))[0m
+  [36m15[0m  [36m(.log js/console "end")[0m
+  [36m16[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m17[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m18[0m  [36m  (doseq [d dk-nat-tags][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:14  column:8  ----[0m
+
+  [1mUse of undeclared Var places.core/<![0m
+
+  [36m10[0m  [36m(.log js/console "start")[0m
+  [36m11[0m  [36m(defn make-go [][0m
+  [36m12[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [36m13[0m  [36m    (go[0m
+  [33m14[0m  [1m      (<! out))))[0m
+  [0m  [0m  [33m       ^--- Use of undeclared Var places.core/<![0m
+  [36m15[0m  [36m(.log js/console "end")[0m
+  [36m16[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m17[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m18[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m19[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d)) [0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.294 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:28  column:14  ----[0m
+
+  [1mNo such namespace: dk-nat, could not locate dk_nat.cljs, dk_nat.cljc, or Closure namespace ""[0m
+
+  [36m24[0m  [36m                                     :content-type "application/json"[0m
+  [36m25[0m  [36m                                     :with-credentials? false}))[0m
+  [36m26[0m  [36m[0m
+  [36m27[0m  [36m(defn make-go [][0m
+  [33m28[0m  [1m  (let [out (dk-nat/query-id)][0m
+  [0m  [0m  [33m             ^--- No such namespace: dk-nat, could not locate dk_nat.cljs, dk_nat.cljc, or Closure namespace ""[0m
+  [36m29[0m  [36m    (go[0m
+  [36m30[0m  [36m      (<! out))))[0m
+  [36m31[0m  [36m[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m#_(defn extracted-id [][0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:28  column:14  ----[0m
+
+  [1mUse of undeclared Var dk-nat/query-id[0m
+
+  [36m24[0m  [36m                                     :content-type "application/json"[0m
+  [36m25[0m  [36m                                     :with-credentials? false}))[0m
+  [36m26[0m  [36m[0m
+  [36m27[0m  [36m(defn make-go [][0m
+  [33m28[0m  [1m  (let [out (dk-nat/query-id)][0m
+  [0m  [0m  [33m             ^--- Use of undeclared Var dk-nat/query-id[0m
+  [36m29[0m  [36m    (go[0m
+  [36m30[0m  [36m      (<! out))))[0m
+  [36m31[0m  [36m[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m#_(defn extracted-id [][0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:13  column:6  ----[0m
+
+  [1mUse of undeclared Var places.core/go[0m
+
+  [36m10[0m  [36m(.log js/console "start")[0m
+  [36m11[0m  [36m(defn make-go [][0m
+  [36m12[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [33m13[0m  [1m    (go[0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var places.core/go[0m
+  [36m14[0m  [36m      (<! out))))[0m
+  [36m15[0m  [36m(.log js/console "end")[0m
+  [36m16[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m17[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m18[0m  [36m  (doseq [d dk-nat-tags][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:14  column:8  ----[0m
+
+  [1mUse of undeclared Var places.core/<![0m
+
+  [36m10[0m  [36m(.log js/console "start")[0m
+  [36m11[0m  [36m(defn make-go [][0m
+  [36m12[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [36m13[0m  [36m    (go[0m
+  [33m14[0m  [1m      (<! out))))[0m
+  [0m  [0m  [33m       ^--- Use of undeclared Var places.core/<![0m
+  [36m15[0m  [36m(.log js/console "end")[0m
+  [36m16[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m17[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m18[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m19[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d)) [0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.371 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:13  column:6  ----[0m
+
+  [1mUse of undeclared Var places.core/go[0m
+
+  [36m10[0m  [36m(.log js/console "start")[0m
+  [36m11[0m  [36m(defn make-go [][0m
+  [36m12[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [33m13[0m  [1m    (go[0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var places.core/go[0m
+  [36m14[0m  [36m      (<! out))))[0m
+  [36m15[0m  [36m(.log js/console "end")[0m
+  [36m16[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m17[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m18[0m  [36m  (doseq [d dk-nat-tags][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:14  column:8  ----[0m
+
+  [1mUse of undeclared Var places.core/<![0m
+
+  [36m10[0m  [36m(.log js/console "start")[0m
+  [36m11[0m  [36m(defn make-go [][0m
+  [36m12[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [36m13[0m  [36m    (go[0m
+  [33m14[0m  [1m      (<! out))))[0m
+  [0m  [0m  [33m       ^--- Use of undeclared Var places.core/<![0m
+  [36m15[0m  [36m(.log js/console "end")[0m
+  [36m16[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m17[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m18[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m19[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d)) [0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.357 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.211 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:11  column:2  ----[0m
+
+  [1mUse of undeclared Var places.core/make-go[0m
+
+  [36m 8[0m  [36m(enable-console-print!)[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(.log js/console "start")[0m
+  [33m11[0m  [1m(make-go)[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var places.core/make-go[0m
+  [36m12[0m  [36m(.log js/console "end")[0m
+  [36m13[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m14[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m15[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m16[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d)) [0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:11  column:2  ----[0m
+
+  [1mUse of undeclared Var places.core/make-go[0m
+
+  [36m 8[0m  [36m(enable-console-print!)[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(.log js/console "start")[0m
+  [33m11[0m  [1m(make-go)[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var places.core/make-go[0m
+  [36m12[0m  [36m(.log js/console "end")[0m
+  [36m13[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m14[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m15[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m16[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d)) [0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.314 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.2 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.203 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.19 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.245 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.212 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.24 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.246 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.243 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.24 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.236 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:30  column:25  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/id->tags[0m
+
+  [36m27[0m  [36m(defn make-go [][0m
+  [36m28[0m  [36m  (let [out (query-id)][0m
+  [36m29[0m  [36m    (go[0m
+  [33m30[0m  [1m      (.log js/console (id->tags (extract-id (<! out)))))))[0m
+  [0m  [0m  [33m                        ^--- Use of undeclared Var places.dk.natmus/id->tags[0m
+  [36m31[0m  [36m[0m
+  [36m32[0m  [36m[0m
+  [36m33[0m  [36m(defn id->tags [id][0m
+  [36m34[0m  [36m  (http/get[0m
+  [36m35[0m  [36m   (str base-url [0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.257 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.241 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:37  column:5  ----[0m
+
+  [1mWrong number of args (4) passed to cljs.core.async.impl.ioc-helpers/take![0m
+
+  [36m33[0m  [36m    :with-credentials? false}))[0m
+  [36m34[0m  [36m[0m
+  [36m35[0m  [36m(defn make-go [][0m
+  [36m36[0m  [36m  (let [out (query-id)][0m
+  [33m37[0m  [1m    (go[0m
+  [0m  [0m  [33m    ^--- Wrong number of args (4) passed to cljs.core.async.impl.ioc-helpers/take![0m
+  [36m38[0m  [36m      (.log js/console (<! id->tags (extract-id (<! out)))))))[0m
+  [36m39[0m  [36m[0m
+  [36m40[0m  [36m[0m
+  [36m41[0m  [36m[0m
+  [36m42[0m  [36m(defn extract-tags [response][0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.293 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:37  column:5  ----[0m
+
+  [1mWrong number of args (4) passed to cljs.core.async.impl.ioc-helpers/take![0m
+
+  [36m33[0m  [36m    :with-credentials? false}))[0m
+  [36m34[0m  [36m[0m
+  [36m35[0m  [36m(defn make-go [][0m
+  [36m36[0m  [36m  (let [out (query-id)][0m
+  [33m37[0m  [1m    (go[0m
+  [0m  [0m  [33m    ^--- Wrong number of args (4) passed to cljs.core.async.impl.ioc-helpers/take![0m
+  [36m38[0m  [36m      (.log js/console (<! id->tags (extract-id (<! out)))))))[0m
+  [36m39[0m  [36m[0m
+  [36m40[0m  [36m(defn extract-tags [response][0m
+  [36m41[0m  [36m  (:tags (:_source (nth (:hits (:hits (:body response))) 0))))[0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.281 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.236 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.225 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.246 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.219 seconds.[0m
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.195 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.206 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/dk/natmus.cljs   line:41  column:28  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/html[0m
+
+  [36m38[0m  [36m(defn make-go [][0m
+  [36m39[0m  [36m  (let [out (query-id)][0m
+  [36m40[0m  [36m    (go[0m
+  [33m41[0m  [1m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [0m  [0m  [33m                           ^--- Use of undeclared Var places.dk.natmus/html[0m
+  [36m42[0m  [36m      (let [id (extract-id (<! out))][0m
+  [36m43[0m  [36m      (.log js/console (prn (extract-tags (<! (id->tags id)))))))))[0m
+  [36m44[0m  [36m[0m
+  [36m45[0m  [36m[0m
+  [36m46[0m  [36m#_(defn tags [i][0m
+
+[36m----  Compiler Warning : Please see src/places/dk/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.338 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:10  column:14  ----[0m
+
+  [1mUse of undeclared Var places.core/query-id[0m
+
+  [36m 6[0m  [36m            [clj-fuzzy.stemmers :as stemmers][0m
+  [36m 7[0m  [36m            [cljs.core.async :refer [<! chan put! >!]]))[0m
+  [36m 8[0m  [36m[0m
+  [36m 9[0m  [36m(defn make-go [][0m
+  [33m10[0m  [1m  (let [out (query-id)][0m
+  [0m  [0m  [33m             ^--- Use of undeclared Var places.core/query-id[0m
+  [36m11[0m  [36m    (go[0m
+  [36m12[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m13[0m  [36m      (let [id (extract-id (<! out))][0m
+  [36m14[0m  [36m      (.log js/console (prn (extract-tags (<! (id->tags id)))))))))[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:11  column:6  ----[0m
+
+  [1mUse of undeclared Var places.core/go[0m
+
+  [36m 7[0m  [36m            [cljs.core.async :refer [<! chan put! >!]]))[0m
+  [36m 8[0m  [36m[0m
+  [36m 9[0m  [36m(defn make-go [][0m
+  [36m10[0m  [36m  (let [out (query-id)][0m
+  [33m11[0m  [1m    (go[0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var places.core/go[0m
+  [36m12[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m13[0m  [36m      (let [id (extract-id (<! out))][0m
+  [36m14[0m  [36m      (.log js/console (prn (extract-tags (<! (id->tags id)))))))))[0m
+  [36m15[0m  [36m[0m
+  [36m16[0m  [36m(enable-console-print!)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:13  column:17  ----[0m
+
+  [1mUse of undeclared Var places.core/extract-id[0m
+
+  [36m 9[0m  [36m(defn make-go [][0m
+  [36m10[0m  [36m  (let [out (query-id)][0m
+  [36m11[0m  [36m    (go[0m
+  [36m12[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [33m13[0m  [1m      (let [id (extract-id (<! out))][0m
+  [0m  [0m  [33m                ^--- Use of undeclared Var places.core/extract-id[0m
+  [36m14[0m  [36m      (.log js/console (prn (extract-tags (<! (id->tags id)))))))))[0m
+  [36m15[0m  [36m[0m
+  [36m16[0m  [36m(enable-console-print!)[0m
+  [36m17[0m  [36m(.log js/console "start")[0m
+  [36m18[0m  [36m(dk-nat/make-go)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:14  column:30  ----[0m
+
+  [1mUse of undeclared Var places.core/extract-tags[0m
+
+  [36m10[0m  [36m  (let [out (query-id)][0m
+  [36m11[0m  [36m    (go[0m
+  [36m12[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m13[0m  [36m      (let [id (extract-id (<! out))][0m
+  [33m14[0m  [1m      (.log js/console (prn (extract-tags (<! (id->tags id)))))))))[0m
+  [0m  [0m  [33m                             ^--- Use of undeclared Var places.core/extract-tags[0m
+  [36m15[0m  [36m[0m
+  [36m16[0m  [36m(enable-console-print!)[0m
+  [36m17[0m  [36m(.log js/console "start")[0m
+  [36m18[0m  [36m(dk-nat/make-go)[0m
+  [36m19[0m  [36m(.log js/console "end")[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:14  column:48  ----[0m
+
+  [1mUse of undeclared Var places.core/id->tags[0m
+
+  [36m10[0m  [36m  (let [out (query-id)][0m
+  [36m11[0m  [36m    (go[0m
+  [36m12[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m13[0m  [36m      (let [id (extract-id (<! out))][0m
+  [33m14[0m  [1m      (.log js/console (prn (extract-tags (<! (id->tags id)))))))))[0m
+  [0m  [0m  [33m                                               ^--- Use of undeclared Var places.core/id->tags[0m
+  [36m15[0m  [36m[0m
+  [36m16[0m  [36m(enable-console-print!)[0m
+  [36m17[0m  [36m(.log js/console "start")[0m
+  [36m18[0m  [36m(dk-nat/make-go)[0m
+  [36m19[0m  [36m(.log js/console "end")[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.301 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:10  column:14  ----[0m
+
+  [1mUse of undeclared Var places.core/query-id[0m
+
+  [36m 6[0m  [36m            [clj-fuzzy.stemmers :as stemmers][0m
+  [36m 7[0m  [36m            [cljs.core.async :refer [<! chan put! >!]]))[0m
+  [36m 8[0m  [36m[0m
+  [36m 9[0m  [36m(defn make-go [][0m
+  [33m10[0m  [1m  (let [out (query-id)][0m
+  [0m  [0m  [33m             ^--- Use of undeclared Var places.core/query-id[0m
+  [36m11[0m  [36m    (go[0m
+  [36m12[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m13[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [36m14[0m  [36m      (.log js/console (prn (extract-tags (<! (id->tags id)))))))))[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:11  column:6  ----[0m
+
+  [1mUse of undeclared Var places.core/go[0m
+
+  [36m 7[0m  [36m            [cljs.core.async :refer [<! chan put! >!]]))[0m
+  [36m 8[0m  [36m[0m
+  [36m 9[0m  [36m(defn make-go [][0m
+  [36m10[0m  [36m  (let [out (query-id)][0m
+  [33m11[0m  [1m    (go[0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var places.core/go[0m
+  [36m12[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m13[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [36m14[0m  [36m      (.log js/console (prn (extract-tags (<! (id->tags id)))))))))[0m
+  [36m15[0m  [36m[0m
+  [36m16[0m  [36m(enable-console-print!)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:14  column:30  ----[0m
+
+  [1mUse of undeclared Var places.core/extract-tags[0m
+
+  [36m10[0m  [36m  (let [out (query-id)][0m
+  [36m11[0m  [36m    (go[0m
+  [36m12[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m13[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [33m14[0m  [1m      (.log js/console (prn (extract-tags (<! (id->tags id)))))))))[0m
+  [0m  [0m  [33m                             ^--- Use of undeclared Var places.core/extract-tags[0m
+  [36m15[0m  [36m[0m
+  [36m16[0m  [36m(enable-console-print!)[0m
+  [36m17[0m  [36m(.log js/console "start")[0m
+  [36m18[0m  [36m(dk-nat/make-go)[0m
+  [36m19[0m  [36m(.log js/console "end")[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:14  column:48  ----[0m
+
+  [1mUse of undeclared Var places.core/id->tags[0m
+
+  [36m10[0m  [36m  (let [out (query-id)][0m
+  [36m11[0m  [36m    (go[0m
+  [36m12[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m13[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [33m14[0m  [1m      (.log js/console (prn (extract-tags (<! (id->tags id)))))))))[0m
+  [0m  [0m  [33m                                               ^--- Use of undeclared Var places.core/id->tags[0m
+  [36m15[0m  [36m[0m
+  [36m16[0m  [36m(enable-console-print!)[0m
+  [36m17[0m  [36m(.log js/console "start")[0m
+  [36m18[0m  [36m(dk-nat/make-go)[0m
+  [36m19[0m  [36m(.log js/console "end")[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.29 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:11  column:6  ----[0m
+
+  [1mUse of undeclared Var places.core/go[0m
+
+  [36m 7[0m  [36m            [cljs.core.async :refer [<! chan put! >!]]))[0m
+  [36m 8[0m  [36m[0m
+  [36m 9[0m  [36m(defn make-go [][0m
+  [36m10[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [33m11[0m  [1m    (go[0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var places.core/go[0m
+  [36m12[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m13[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [36m14[0m  [36m      (.log js/console (prn (extract-tags (<! (id->tags id)))))))))[0m
+  [36m15[0m  [36m[0m
+  [36m16[0m  [36m(enable-console-print!)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:14  column:30  ----[0m
+
+  [1mUse of undeclared Var places.core/extract-tags[0m
+
+  [36m10[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [36m11[0m  [36m    (go[0m
+  [36m12[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m13[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [33m14[0m  [1m      (.log js/console (prn (extract-tags (<! (id->tags id)))))))))[0m
+  [0m  [0m  [33m                             ^--- Use of undeclared Var places.core/extract-tags[0m
+  [36m15[0m  [36m[0m
+  [36m16[0m  [36m(enable-console-print!)[0m
+  [36m17[0m  [36m(.log js/console "start")[0m
+  [36m18[0m  [36m(dk-nat/make-go)[0m
+  [36m19[0m  [36m(.log js/console "end")[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:14  column:48  ----[0m
+
+  [1mUse of undeclared Var places.core/id->tags[0m
+
+  [36m10[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [36m11[0m  [36m    (go[0m
+  [36m12[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m13[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [33m14[0m  [1m      (.log js/console (prn (extract-tags (<! (id->tags id)))))))))[0m
+  [0m  [0m  [33m                                               ^--- Use of undeclared Var places.core/id->tags[0m
+  [36m15[0m  [36m[0m
+  [36m16[0m  [36m(enable-console-print!)[0m
+  [36m17[0m  [36m(.log js/console "start")[0m
+  [36m18[0m  [36m(dk-nat/make-go)[0m
+  [36m19[0m  [36m(.log js/console "end")[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.281 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.134 seconds.[0m
+[36m----  Could not Read  src/places/core.cljs   line:14  column:71  ----[0m
+
+  [1mInvalid token: /dk-nat/id->tags[0m
+
+  [36m12[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m13[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [33m14[0m  [1m      (.log js/console (prn (dk-nat/extract-tags (<! (/dk-nat/id->tags id)))))))))[0m
+  [0m  [0m  [33m                                                                      ^--- Invalid token: /dk-nat/id->tags[0m
+  [36m15[0m  [36m[0m
+  [36m16[0m  [36m(enable-console-print!)[0m
+  [36m17[0m  [36m(.log js/console "start")[0m
+
+[36m----  Reader Error : Please see src/places/core.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:11  column:6  ----[0m
+
+  [1mUse of undeclared Var places.core/go[0m
+
+  [36m 7[0m  [36m            [cljs.core.async :refer [<! chan put! >!]]))[0m
+  [36m 8[0m  [36m[0m
+  [36m 9[0m  [36m(defn make-go [][0m
+  [36m10[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [33m11[0m  [1m    (go[0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var places.core/go[0m
+  [36m12[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m13[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [36m14[0m  [36m      (.log js/console (prn (dk-nat/extract-tags (<! (dk-nat/id->tags id)))))))))[0m
+  [36m15[0m  [36m[0m
+  [36m16[0m  [36m(enable-console-print!)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.311 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.212 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:19  column:2  ----[0m
+
+  [1mUse of undeclared Var places.dk.natmus/make-go[0m
+
+  [36m15[0m  [36m      (.log js/console (prn (dk-nat/extract-tags (<! (dk-nat/id->tags id)))))))))[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(enable-console-print!)[0m
+  [36m18[0m  [36m(.log js/console "start")[0m
+  [33m19[0m  [1m(dk-nat/make-go)[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var places.dk.natmus/make-go[0m
+  [36m20[0m  [36m(.log js/console "end")[0m
+  [36m21[0m  [36m;; Return the link if the stem of the Danish and Swedish word is the same[0m
+  [36m22[0m  [36m#_(defn reduce-tags [dk-nat-tags se-nat-tags][0m
+  [36m23[0m  [36m  (doseq [d dk-nat-tags][0m
+  [36m24[0m  [36m   (reduce #((if (= (stemmers/lancaster (:tag d)) [0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.326 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.253 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:15  column:45  ----[0m
+
+  [1mUse of undeclared Var places.core/id->image[0m
+
+  [36m11[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [36m12[0m  [36m    (go[0m
+  [36m13[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m14[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [33m15[0m  [1m        (.log js/console (util/image->link (id->image id)))[0m
+  [0m  [0m  [33m                                            ^--- Use of undeclared Var places.core/id->image[0m
+  [36m16[0m  [36m      (.log js/console (prn (dk-nat/extract-tags (<! (dk-nat/id->tags id)))))))))[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(enable-console-print!)[0m
+  [36m19[0m  [36m(.log js/console "start")[0m
+  [36m20[0m  [36m(make-go)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:15  column:27  ----[0m
+
+  [1mNo such namespace: util, could not locate util.cljs, util.cljc, or Closure namespace ""[0m
+
+  [36m11[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [36m12[0m  [36m    (go[0m
+  [36m13[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m14[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [33m15[0m  [1m        (.log js/console (util/image->link (id->image id)))[0m
+  [0m  [0m  [33m                          ^--- No such namespace: util, could not locate util.cljs, util.cljc, or Closure namespace ""[0m
+  [36m16[0m  [36m      (.log js/console (prn (dk-nat/extract-tags (<! (dk-nat/id->tags id)))))))))[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(enable-console-print!)[0m
+  [36m19[0m  [36m(.log js/console "start")[0m
+  [36m20[0m  [36m(make-go)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:15  column:27  ----[0m
+
+  [1mUse of undeclared Var util/image->link[0m
+
+  [36m11[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [36m12[0m  [36m    (go[0m
+  [36m13[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m14[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [33m15[0m  [1m        (.log js/console (util/image->link (id->image id)))[0m
+  [0m  [0m  [33m                          ^--- Use of undeclared Var util/image->link[0m
+  [36m16[0m  [36m      (.log js/console (prn (dk-nat/extract-tags (<! (dk-nat/id->tags id)))))))))[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(enable-console-print!)[0m
+  [36m19[0m  [36m(.log js/console "start")[0m
+  [36m20[0m  [36m(make-go)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.326 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:15  column:45  ----[0m
+
+  [1mUse of undeclared Var places.core/id->image[0m
+
+  [36m11[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [36m12[0m  [36m    (go[0m
+  [36m13[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m14[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [33m15[0m  [1m        (.log js/console (util/image->link (id->image id)))[0m
+  [0m  [0m  [33m                                            ^--- Use of undeclared Var places.core/id->image[0m
+  [36m16[0m  [36m      (.log js/console (prn (dk-nat/extract-tags (<! (dk-nat/id->tags id)))))))))[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(enable-console-print!)[0m
+  [36m19[0m  [36m(.log js/console "start")[0m
+  [36m20[0m  [36m(make-go)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:15  column:27  ----[0m
+
+  [1mNo such namespace: util, could not locate util.cljs, util.cljc, or Closure namespace ""[0m
+
+  [36m11[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [36m12[0m  [36m    (go[0m
+  [36m13[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m14[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [33m15[0m  [1m        (.log js/console (util/image->link (id->image id)))[0m
+  [0m  [0m  [33m                          ^--- No such namespace: util, could not locate util.cljs, util.cljc, or Closure namespace ""[0m
+  [36m16[0m  [36m      (.log js/console (prn (dk-nat/extract-tags (<! (dk-nat/id->tags id)))))))))[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(enable-console-print!)[0m
+  [36m19[0m  [36m(.log js/console "start")[0m
+  [36m20[0m  [36m(make-go)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:15  column:27  ----[0m
+
+  [1mUse of undeclared Var util/image->link[0m
+
+  [36m11[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [36m12[0m  [36m    (go[0m
+  [36m13[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m14[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [33m15[0m  [1m        (.log js/console (util/image->link (id->image id)))[0m
+  [0m  [0m  [33m                          ^--- Use of undeclared Var util/image->link[0m
+  [36m16[0m  [36m      (.log js/console (prn (dk-nat/extract-tags (<! (dk-nat/id->tags id)))))))))[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(enable-console-print!)[0m
+  [36m19[0m  [36m(.log js/console "start")[0m
+  [36m20[0m  [36m(make-go)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.301 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:15  column:27  ----[0m
+
+  [1mNo such namespace: util, could not locate util.cljs, util.cljc, or Closure namespace ""[0m
+
+  [36m11[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [36m12[0m  [36m    (go[0m
+  [36m13[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m14[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [33m15[0m  [1m        (.log js/console (util/image->link (dk-nat/id->image id)))[0m
+  [0m  [0m  [33m                          ^--- No such namespace: util, could not locate util.cljs, util.cljc, or Closure namespace ""[0m
+  [36m16[0m  [36m      (.log js/console (prn (dk-nat/extract-tags (<! (dk-nat/id->tags id)))))))))[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(enable-console-print!)[0m
+  [36m19[0m  [36m(.log js/console "start")[0m
+  [36m20[0m  [36m(make-go)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:15  column:27  ----[0m
+
+  [1mUse of undeclared Var util/image->link[0m
+
+  [36m11[0m  [36m  (let [out (dk-nat/query-id)][0m
+  [36m12[0m  [36m    (go[0m
+  [36m13[0m  [36m      (.write js/document (html [:html {:lang "en"} [:body]]))[0m
+  [36m14[0m  [36m      (let [id (dk-nat/extract-id (<! out))][0m
+  [33m15[0m  [1m        (.log js/console (util/image->link (dk-nat/id->image id)))[0m
+  [0m  [0m  [33m                          ^--- Use of undeclared Var util/image->link[0m
+  [36m16[0m  [36m      (.log js/console (prn (dk-nat/extract-tags (<! (dk-nat/id->tags id)))))))))[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(enable-console-print!)[0m
+  [36m19[0m  [36m(.log js/console "start")[0m
+  [36m20[0m  [36m(make-go)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.355 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.192 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.247 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/util.cljs   line:8  column:14  ----[0m
+
+  [1mUse of undeclared Var places.util/chan[0m
+
+  [36m 4[0m  [36m  (:require [hiccups.runtime :as hiccupsrt][0m
+  [36m 5[0m  [36m            [cljs.core.async :refer [<!]]))[0m
+  [36m 6[0m  [36m[0m
+  [36m 7[0m  [36m(defn tags [query-fn id->tags-fn id->image-fn i][0m
+  [33m 8[0m  [1m  (let [out (chan)][0m
+  [0m  [0m  [33m             ^--- Use of undeclared Var places.util/chan[0m
+  [36m 9[0m  [36m    (let [id (<! (query-fn))[0m
+  [36m10[0m  [36m            tags (<! (id->tags-fn id))[0m
+  [36m11[0m  [36m            image (<! (id->image-fn id))][0m
+  [36m12[0m  [36m        (do (prn tags)[0m
+  [36m13[0m  [36m    (map (fn [t] {:tag t :link image}) tags)))))[0m
+
+[36m----  Compiler Warning : Please see src/places/util.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.497 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/util.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/se/natmus.cljs   line:64  column:4  ----[0m
+
+  [1mUse of undeclared Var places.util/tags[0m
+
+  [36m60[0m  [36m                        {:with-credentials? false}))][0m
+  [36m61[0m  [36m      (:value (:datavalue (:mainsnak (nth (get (:claims (get (:entities (:body response)) id)) "P18") 0)))))))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn tags [i][0m
+  [33m64[0m  [1m  (util/tags query-id id->tags id->image i))[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var places.util/tags[0m
+
+[36m----  Compiler Warning : Please see src/places/se/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.399 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/util.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.214 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.207 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.204 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.222 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.199 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.199 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/se/natmus.cljs   line:61  column:4  ----[0m
+
+  [1mUse of undeclared Var places.util/tags[0m
+
+  [36m57[0m  [36m                        {:with-credentials? false}))][0m
+  [36m58[0m  [36m      (:value (:datavalue (:mainsnak (nth (get (:claims (get (:entities (:body response)) id)) "P18") 0)))))))[0m
+  [36m59[0m  [36m[0m
+  [36m60[0m  [36m(defn tags [i][0m
+  [33m61[0m  [1m  (util/tags query-id id->tags id->image i))[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var places.util/tags[0m
+
+[36m----  Compiler Warning : Please see src/places/se/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.336 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/se/natmus.cljs   line:38  column:38  ----[0m
+
+  [1mUse of undeclared Var places.se.natmus/id[0m
+
+  [36m34[0m  [36m(defn extract-tags [response entity][0m
+  [36m35[0m  [36m  (:value (:sv (:labels (get (:entities (:body response)) entity)))))[0m
+  [36m36[0m  [36m[0m
+  [36m37[0m  [36m(defn call-base-entity [][0m
+  [33m38[0m  [1m  (http/get (str entity-base-url "/" id ".json")[0m
+  [0m  [0m  [33m                                     ^--- Use of undeclared Var places.se.natmus/id[0m
+  [36m39[0m  [36m            {:with-credentials? false}))[0m
+  [36m40[0m  [36m;; Finds the tags with an id as input.[0m
+  [36m41[0m  [36m;; API Call:[0m
+  [36m42[0m  [36m;;   GET https://www.wikidata.org/wiki/Special:EntityData/Q7917207.json[0m
+  [36m43[0m  [36m;; Extraction:[0m
+
+[36m----  Compiler Warning : Please see src/places/se/natmus.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/se/natmus.cljs   line:60  column:4  ----[0m
+
+  [1mUse of undeclared Var places.util/tags[0m
+
+  [36m56[0m  [36m(defn id->image [response id][0m
+  [36m57[0m  [36m  (:value (:datavalue (:mainsnak (nth (get (:claims (get (:entities (:body response)) id)) "P18") 0)))))[0m
+  [36m58[0m  [36m[0m
+  [36m59[0m  [36m(defn tags [i][0m
+  [33m60[0m  [1m  (util/tags query-id id->tags id->image i))[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var places.util/tags[0m
+
+[36m----  Compiler Warning : Please see src/places/se/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.365 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/se/natmus.cljs   line:38  column:38  ----[0m
+
+  [1mUse of undeclared Var places.se.natmus/id[0m
+
+  [36m34[0m  [36m(defn extract-tags [response entity][0m
+  [36m35[0m  [36m  (:value (:sv (:labels (get (:entities (:body response)) entity)))))[0m
+  [36m36[0m  [36m[0m
+  [36m37[0m  [36m(defn call-base-entity [][0m
+  [33m38[0m  [1m  (http/get (str entity-base-url "/" id ".json")[0m
+  [0m  [0m  [33m                                     ^--- Use of undeclared Var places.se.natmus/id[0m
+  [36m39[0m  [36m            {:with-credentials? false}))[0m
+  [36m40[0m  [36m;; Finds the tags with an id as input.[0m
+  [36m41[0m  [36m;; API Call:[0m
+  [36m42[0m  [36m;;   GET https://www.wikidata.org/wiki/Special:EntityData/Q7917207.json[0m
+  [36m43[0m  [36m;; Extraction:[0m
+
+[36m----  Compiler Warning : Please see src/places/se/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.301 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.229 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.181 seconds.[0m
+[36m----  Could not Read  src/places/core.cljs   line:23  column:7  ----[0m
+
+  [1mEOF while reading, starting at line 23 and column 7[0m
+
+  [36m21[0m  [36m  (let [out (se-nat/query-id)][0m
+  [36m22[0m  [36m    (go (<! out))))[0m
+  [33m23[0m  [1m      (.log js/console [0m
+  [0m  [0m  [33m      ^--- EOF while reading, starting at line 23 and column 7[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m(enable-console-print!)[0m
+  [36m26[0m  [36m(.log js/console "start")[0m
+
+[36m----  Reader Error : Please see src/places/core.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.231 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.239 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:23  column:25  ----[0m
+
+  [1mUse of undeclared Var places.core/extract-id[0m
+
+  [36m20[0m  [36m(defn make-se [][0m
+  [36m21[0m  [36m  (let [out (se-nat/query-id)][0m
+  [36m22[0m  [36m    (go [0m
+  [33m23[0m  [1m      (.log js/console (extract-id (<! out))))))[0m
+  [0m  [0m  [33m                        ^--- Use of undeclared Var places.core/extract-id[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m(enable-console-print!)[0m
+  [36m26[0m  [36m(.log js/console "start")[0m
+  [36m27[0m  [36m(make-se)[0m
+  [36m28[0m  [36m(.log js/console "end")[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.319 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:23  column:25  ----[0m
+
+  [1mUse of undeclared Var places.se.natmus/extract-id[0m
+
+  [36m20[0m  [36m(defn make-se [][0m
+  [36m21[0m  [36m  (let [out (se-nat/query-id)][0m
+  [36m22[0m  [36m    (go [0m
+  [33m23[0m  [1m      (.log js/console (se-nat/extract-id (<! out))))))[0m
+  [0m  [0m  [33m                        ^--- Use of undeclared Var places.se.natmus/extract-id[0m
+  [36m24[0m  [36m[0m
+  [36m25[0m  [36m(enable-console-print!)[0m
+  [36m26[0m  [36m(.log js/console "start")[0m
+  [36m27[0m  [36m(make-se)[0m
+  [36m28[0m  [36m(.log js/console "end")[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.291 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.236 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.247 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.257 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.211 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.237 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.244 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.214 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.216 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.21 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.238 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.21 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.129 seconds.[0m
+[36m----  Could not Read  src/places/se/natmus.cljs   line:12  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 12 and column 1[0m
+
+  [36m10[0m  [36m  "SELECT ?item WHERE { ?item wdt:P195 wd:Q842858 . } LIMIT 10 OFFSET 10")[0m
+  [36m11[0m  [36m[0m
+  [33m12[0m  [1m(defn extract-id [response][0m
+  [0m  [0m  [33m^--- EOF while reading, starting at line 12 and column 1[0m
+  [36m13[0m  [36m  (nth (:body response) 0)[0m
+
+[36m----  Reader Error : Please see src/places/se/natmus.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.218 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.244 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.238 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.203 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.203 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.201 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.224 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.226 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.253 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.241 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.229 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.232 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.265 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.254 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.226 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/se/natmus.cljs   line:14  column:12  ----[0m
+
+  [1mNo such namespace: transit, could not locate transit.cljs, transit.cljc, or Closure namespace ""[0m
+
+  [36m10[0m  [36m(def sparql-query[0m
+  [36m11[0m  [36m  "SELECT ?item WHERE { ?item wdt:P195 wd:Q842858 . } LIMIT 10 OFFSET 10")[0m
+  [36m12[0m  [36m[0m
+  [36m13[0m  [36m(defn extract-id [response][0m
+  [33m14[0m  [1m  (let [r (transit/reader :json)][0m
+  [0m  [0m  [33m           ^--- No such namespace: transit, could not locate transit.cljs, transit.cljc, or Closure namespace ""[0m
+  [36m15[0m  [36m    (transit/read r response)))[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m#_(defn extract-id [response][0m
+  [36m19[0m  [36m  (clojure.string/replace [0m
+
+[36m----  Compiler Warning : Please see src/places/se/natmus.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/se/natmus.cljs   line:14  column:12  ----[0m
+
+  [1mUse of undeclared Var transit/reader[0m
+
+  [36m10[0m  [36m(def sparql-query[0m
+  [36m11[0m  [36m  "SELECT ?item WHERE { ?item wdt:P195 wd:Q842858 . } LIMIT 10 OFFSET 10")[0m
+  [36m12[0m  [36m[0m
+  [36m13[0m  [36m(defn extract-id [response][0m
+  [33m14[0m  [1m  (let [r (transit/reader :json)][0m
+  [0m  [0m  [33m           ^--- Use of undeclared Var transit/reader[0m
+  [36m15[0m  [36m    (transit/read r response)))[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m#_(defn extract-id [response][0m
+  [36m19[0m  [36m  (clojure.string/replace [0m
+
+[36m----  Compiler Warning : Please see src/places/se/natmus.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/se/natmus.cljs   line:15  column:6  ----[0m
+
+  [1mNo such namespace: transit, could not locate transit.cljs, transit.cljc, or Closure namespace ""[0m
+
+  [36m11[0m  [36m  "SELECT ?item WHERE { ?item wdt:P195 wd:Q842858 . } LIMIT 10 OFFSET 10")[0m
+  [36m12[0m  [36m[0m
+  [36m13[0m  [36m(defn extract-id [response][0m
+  [36m14[0m  [36m  (let [r (transit/reader :json)][0m
+  [33m15[0m  [1m    (transit/read r response)))[0m
+  [0m  [0m  [33m     ^--- No such namespace: transit, could not locate transit.cljs, transit.cljc, or Closure namespace ""[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m#_(defn extract-id [response][0m
+  [36m19[0m  [36m  (clojure.string/replace [0m
+  [36m20[0m  [36m   (:value (:item (nth (:bindings (:results (:body response))) 0)))[0m
+
+[36m----  Compiler Warning : Please see src/places/se/natmus.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/se/natmus.cljs   line:15  column:6  ----[0m
+
+  [1mUse of undeclared Var transit/read[0m
+
+  [36m11[0m  [36m  "SELECT ?item WHERE { ?item wdt:P195 wd:Q842858 . } LIMIT 10 OFFSET 10")[0m
+  [36m12[0m  [36m[0m
+  [36m13[0m  [36m(defn extract-id [response][0m
+  [36m14[0m  [36m  (let [r (transit/reader :json)][0m
+  [33m15[0m  [1m    (transit/read r response)))[0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var transit/read[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m#_(defn extract-id [response][0m
+  [36m19[0m  [36m  (clojure.string/replace [0m
+  [36m20[0m  [36m   (:value (:item (nth (:bindings (:results (:body response))) 0)))[0m
+
+[36m----  Compiler Warning : Please see src/places/se/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.301 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.245 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.236 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.243 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.231 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.23 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.231 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.242 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.235 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.225 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.227 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.239 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.244 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.226 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.227 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.337 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.245 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.131 seconds.[0m
+[36m----  Could not Read  src/places/se/natmus.cljs   line:13  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 13 and column 1[0m
+
+  [36m11[0m  [36m  "SELECT ?item WHERE { ?item wdt:P195 wd:Q842858 . } LIMIT 10 OFFSET 10")[0m
+  [36m12[0m  [36m[0m
+  [33m13[0m  [1m(defn extract-id [response][0m
+  [0m  [0m  [33m^--- EOF while reading, starting at line 13 and column 1[0m
+  [36m14[0m  [36m (let [r (t/reader :json)][0m
+  [36m15[0m  [36m   (nth (t/read r (:body response)) 2))[0m
+
+[36m----  Reader Error : Please see src/places/se/natmus.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.218 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.235 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/se/natmus.cljs   line:15  column:4  ----[0m
+
+  [1mWrong number of args (1) passed to cljs.core/nth[0m
+
+  [36m11[0m  [36m  "SELECT ?item WHERE { ?item wdt:P195 wd:Q842858 . } LIMIT 10 OFFSET 10")[0m
+  [36m12[0m  [36m[0m
+  [36m13[0m  [36m(defn extract-id [response][0m
+  [36m14[0m  [36m (let [r (t/reader :json)][0m
+  [33m15[0m  [1m   (nth (:results (t/read r (:body response)) 2))))[0m
+  [0m  [0m  [33m   ^--- Wrong number of args (1) passed to cljs.core/nth[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m#_(defn extract-id [response][0m
+  [36m19[0m  [36m  (clojure.string/replace [0m
+  [36m20[0m  [36m   (:value (:item (nth (:bindings (:results (:body response))) 0)))[0m
+
+[36m----  Compiler Warning : Please see src/places/se/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.331 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.206 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.214 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.209 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.202 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.205 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.212 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.211 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.207 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.203 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.217 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.213 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.222 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.222 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.231 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.243 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.228 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.121 seconds.[0m
+[36m----  Could not Read  src/places/se/natmus.cljs   line:21  column:42  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m20[0m  [36m   (:value (:item (nth (:bindings (:results (:body response))) 0)))[0m
+  [33m21[0m  [1m   "http://www.wikidata.org/entity/" ""))[0m
+  [0m  [0m  [33m                                         ^--- Unmatched delimiter )[0m
+  [36m22[0m  [36m[0m
+  [36m23[0m  [36m(defn query-id [][0m
+  [36m24[0m  [36m  (http/get base-url[0m
+
+[36m----  Reader Error : Please see src/places/se/natmus.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.229 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.153 seconds.[0m
+[36m----  Could not Read  src/places/core.cljs   line:23  column:7  ----[0m
+
+  [1mEOF while reading, starting at line 23 and column 7[0m
+
+  [36m21[0m  [36m  (let [out (se-nat/query-id)][0m
+  [36m22[0m  [36m    (go [0m
+  [33m23[0m  [1m      (let [id (se-nat/extract-id (<! out))][0m
+  [0m  [0m  [33m      ^--- EOF while reading, starting at line 23 and column 7[0m
+  [36m24[0m  [36m        [0m
+  [36m25[0m  [36m[0m
+  [36m26[0m  [36m(enable-console-print!)[0m
+
+[36m----  Reader Error : Please see src/places/core.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:24  column:19  ----[0m
+
+  [1mUse of undeclared Var places.se.natmus/call-image[0m
+
+  [36m20[0m  [36m(defn make-se [][0m
+  [36m21[0m  [36m  (let [out (se-nat/query-id)][0m
+  [36m22[0m  [36m    (go [0m
+  [36m23[0m  [36m      (let [id (se-nat/extract-id (<! out))][0m
+  [33m24[0m  [1m        (prn (<! (se-nat/call-image id)))))))[0m
+  [0m  [0m  [33m                  ^--- Use of undeclared Var places.se.natmus/call-image[0m
+  [36m25[0m  [36m[0m
+  [36m26[0m  [36m(enable-console-print!)[0m
+  [36m27[0m  [36m(.log js/console "start")[0m
+  [36m28[0m  [36m(make-se)[0m
+  [36m29[0m  [36m(.log js/console "end")[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.29 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.231 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:24  column:15  ----[0m
+
+  [1mUse of undeclared Var places.se.natmus/id->image[0m
+
+  [36m20[0m  [36m(defn make-se [][0m
+  [36m21[0m  [36m  (let [out (se-nat/query-id)][0m
+  [36m22[0m  [36m    (go [0m
+  [36m23[0m  [36m      (let [id (se-nat/extract-id (<! out))][0m
+  [33m24[0m  [1m        (prn (se-nat/id->image (<! (se-nat/call-image id))))))))[0m
+  [0m  [0m  [33m              ^--- Use of undeclared Var places.se.natmus/id->image[0m
+  [36m25[0m  [36m[0m
+  [36m26[0m  [36m(enable-console-print!)[0m
+  [36m27[0m  [36m(.log js/console "start")[0m
+  [36m28[0m  [36m(make-se)[0m
+  [36m29[0m  [36m(.log js/console "end")[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.29 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:22  column:5  ----[0m
+
+  [1mWrong number of args (1) passed to places.se.natmus/id->image[0m
+
+  [36m18[0m  [36m        (.log js/console (prn (dk-nat/extract-tags (<! (dk-nat/id->tags id)))))))))[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m(defn make-se [][0m
+  [36m21[0m  [36m  (let [out (se-nat/query-id)][0m
+  [33m22[0m  [1m    (go [0m
+  [0m  [0m  [33m    ^--- Wrong number of args (1) passed to places.se.natmus/id->image[0m
+  [36m23[0m  [36m      (let [id (se-nat/extract-id (<! out))][0m
+  [36m24[0m  [36m        (prn (se-nat/id->image (<! (se-nat/call-image id))))))))[0m
+  [36m25[0m  [36m[0m
+  [36m26[0m  [36m(enable-console-print!)[0m
+  [36m27[0m  [36m(.log js/console "start")[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.3 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.237 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.215 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.235 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.222 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.216 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.204 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.217 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.206 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.197 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:22  column:5  ----[0m
+
+  [1mWrong number of args (1) passed to places.se.natmus/id->image[0m
+
+  [36m18[0m  [36m        (.log js/console (prn (dk-nat/extract-tags (<! (dk-nat/id->tags id)))))))))[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m(defn make-se [][0m
+  [36m21[0m  [36m  (let [out (se-nat/query-id)][0m
+  [33m22[0m  [1m    (go [0m
+  [0m  [0m  [33m    ^--- Wrong number of args (1) passed to places.se.natmus/id->image[0m
+  [36m23[0m  [36m      (let [id (se-nat/extract-id (<! out))][0m
+  [36m24[0m  [36m        (.log js/console (prn (se-nat/id->image (<! (se-nat/call-image id)))))))))[0m
+  [36m25[0m  [36m;;        (prn (se-nat/id->image (<! (se-nat/call-image id)) id))))))[0m
+  [36m26[0m  [36m[0m
+  [36m27[0m  [36m(enable-console-print!)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.227 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.223 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.206 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.203 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.223 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.222 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.217 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.233 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.227 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.234 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:22  column:5  ----[0m
+
+  [1mWrong number of args (2) passed to places.se.natmus/id->image[0m
+
+  [36m18[0m  [36m        (.log js/console (prn (dk-nat/extract-tags (<! (dk-nat/id->tags id)))))))))[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m(defn make-se [][0m
+  [36m21[0m  [36m  (let [out (se-nat/query-id)][0m
+  [33m22[0m  [1m    (go [0m
+  [0m  [0m  [33m    ^--- Wrong number of args (2) passed to places.se.natmus/id->image[0m
+  [36m23[0m  [36m      (let [id (se-nat/extract-id (<! out))][0m
+  [36m24[0m  [36m        (.log js/console (prn (se-nat/id->image (<! (se-nat/call-image id)) id)))))))[0m
+  [36m25[0m  [36m;;        (prn (se-nat/id->image (<! (se-nat/call-image id)) id))))))[0m
+  [36m26[0m  [36m[0m
+  [36m27[0m  [36m(enable-console-print!)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.29 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.22 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.221 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.229 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.217 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.233 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.233 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.135 seconds.[0m
+[36m----  Could not Read  src/places/se/natmus.cljs   line:58  column:5  ----[0m
+
+  [1mInvalid token: :[0m
+
+  [36m56[0m  [36m;; ['entities']['Q7917207']['claims']['P18'][0]['mainsnak']['datavalue']['value'][0m
+  [36m57[0m  [36m(defn id->image [response id][0m
+  [33m58[0m  [1m  (:"id" (:entities (:body response))))[0m
+  [0m  [0m  [33m    ^--- Invalid token: :[0m
+  [36m59[0m  [36m[0m
+  [36m60[0m  [36m#_(defn id->image [response id][0m
+  [36m61[0m  [36m  (:value (:datavalue (:mainsnak (nth (get (:claims (get (:entities (:body response)) id)) "P18") 0)))))[0m
+
+[36m----  Reader Error : Please see src/places/se/natmus.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.249 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.219 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.236 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.256 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.255 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/se/natmus.cljs   line:59  column:3  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/keys[0m
+
+  [36m55[0m  [36m;; https://commons.wikimedia.org/wiki/File:Marcus_Larson_-_Waterfall_in_Sm%C3%A5land_-_Google_Art_Project.jpg[0m
+  [36m56[0m  [36m;; ['entities']['Q7917207']['claims']['P18'][0]['mainsnak']['datavalue']['value'][0m
+  [36m57[0m  [36m[0m
+  [36m58[0m  [36m(defn id->image [response id][0m
+  [33m59[0m  [1m  (keys (:entities (:body response)) id))[0m
+  [0m  [0m  [33m  ^--- Wrong number of args (2) passed to cljs.core/keys[0m
+  [36m60[0m  [36m[0m
+  [36m61[0m  [36m#_(defn id->image [response id][0m
+  [36m62[0m  [36m  (:value (:datavalue (:mainsnak (nth (get (:claims (get (:entities (:body response)) id)) "P18") 0)))))[0m
+
+[36m----  Compiler Warning : Please see src/places/se/natmus.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.273 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.251 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.273 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.261 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.268 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.253 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.245 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.279 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.247 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.253 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.258 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.228 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.219 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.258 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.24 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.235 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.213 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.236 seconds.[0m
+notifying browser that file changed:  out/places/se/natmus.js

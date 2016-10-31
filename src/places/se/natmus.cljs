@@ -46,14 +46,15 @@
 #_(defn id->tags [id base-entity]
   (entity->tag (:id (:value (:datavalue (:mainsnak (nth (get (:claims (get (:entities (:body base-entity)) id)) "P180") 0)))))))
 
-(def file-url-prefix "https://commons.wikimedia.org/wiki/File:")
+(def wikimedia-file "https://commons.wikimedia.org/wiki/File:")
 
 (defn call-image [id]
   (http/get (str entity-base-url "/" id ".json")
             {:with-credentials? false}))
 
+
 ;; https://commons.wikimedia.org/wiki/File:Marcus_Larson_-_Waterfall_in_Sm%C3%A5land_-_Google_Art_Project.jpg
 ;; ['entities']['Q7917207']['claims']['P18'][0]['mainsnak']['datavalue']['value']
 
 (defn id->image [response id]
-  (:value (:datavalue (:mainsnak (nth ((keyword "P18") (:claims ((keyword id) (:entities (:body response))))) 0)))))
+  (str wikimedia-file (:value (:datavalue (:mainsnak (nth ((keyword "P18") (:claims ((keyword id) (:entities (:body response))))) 0))))))

@@ -20,9 +20,10 @@
 (defn make-se []
   (let [out (se-nat/query-id)]
     (go 
+      (.write js/document (html [:html {:lang "en"} [:body]]))
       (let [id (se-nat/extract-id (<! out))]
         (.log js/console id)
-        (.log js/console (prn (se-nat/id->image (<! (se-nat/call-image id)) id)))))))
+        (.write js/document (html [:img {:src (se-nat/id->image (<! (se-nat/call-image id)) id)}]))))))
 
 (enable-console-print!)
 (.log js/console "start")

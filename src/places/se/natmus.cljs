@@ -1,5 +1,5 @@
 (ns places.se.natmus
-  (:require-macros [cljs.core.async.macros :refer [go]])
+  (:require-macros [cljs.core.async.macros :refer [go go-loop]])
   (:require [places.util :as util]
             [cljs-http.client :as http]
             [cljs.core.async :refer [<!]]
@@ -8,16 +8,16 @@
 (def entity-base-url "https://www.wikidata.org/wiki/Special:EntityData")
 (def base-url "https://query.wikidata.org/bigdata/namespace/wdq/sparql")
 (def sparql-query
-  "SELECT ?item WHERE { ?item wdt:P195 wd:Q842858 . } LIMIT 10 OFFSET 10")
+  "SELECT ?item WHERE { ?item wdt:P195 wd:Q842858 . } LIMIT 1 OFFSET ")
 
 (defn extract-id [response]
  (let [r (t/reader :json)]
    (clojure.string/replace (get (get (nth (get (get (t/read r (:body response)) "results") "bindings") 0) "item") "value") "http://www.wikidata.org/entity/" "")))
 
-(defn query-id []
+(defn query-id [offset]
   (http/get base-url
             {:query-params {"query"
-                            sparql-query
+                            (str sparql-query offset)
                             "format" "json"}
              :with-credentials? false}))
 
@@ -27,14 +27,14 @@
 ;;   GET https://www.wikidata.org/wiki/Special:EntityData/Q34038.json
 ;; Extraction:
 ;;   ['entities']['Q34038']['labels']['sv']['value']
-#_(defn entity->tag [entity]
+(defn entity->tag [entity]
   (http/get (str entity-base-url "/" entity ".json")
-                        {:with-credentials? false}))
+            {:with-credentials? false}))
       
-#_(defn extract-tags [response entity]
-  (:value (:sv (:labels (get (:entities (:body response)) entity)))))
+(defn extract-tags [response entity]
+  (:value (:sv (:labels ((keyword entity) (:entities (:body response)))))))
 
-#_(defn call-base-entity []
+(defn call-base-entity [id]
   (http/get (str entity-base-url "/" id ".json")
             {:with-credentials? false}))
 ;; Finds the tags with an id as input.
@@ -42,9 +42,12 @@
 ;;   GET https://www.wikidata.org/wiki/Special:EntityData/Q7917207.json
 ;; Extraction:
 ;;   ['entities']['Q7917207']['claims']['P180'][0]['mainsnak']['datavalue']['value']['id']
-
-#_(defn id->tags [id base-entity]
-  (entity->tag (:id (:value (:datavalue (:mainsnak (nth (get (:claims (get (:entities (:body base-entity)) id)) "P180") 0)))))))
+(defn tags-extr [id response]
+  (:claims ((keyword id) (:entities (:body response)))))
+(defn tags? [id response]
+  (empty? ((keyword "P180") (:claims ((keyword id) (:entities (:body response)))))))
+(defn id->entity [id response]
+  (:id (:value (:datavalue (:mainsnak (nth ((keyword "P180") (:claims ((keyword id) (:entities (:body response))))) 0))))))
 
 (def wikimedia-file "https://commons.wikimedia.org/wiki/File:")
 

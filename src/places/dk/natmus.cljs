@@ -14,14 +14,15 @@
   (str base-url "/" default-collection "/" id "/image/800/"))
 
 (defn extract-id [response]
-  (:sourceId (:_source (nth (:hits (:hits (:body response))) 0))))
+  ;;  (:sourceId (:_source (nth (:hits (:hits (:body response))) 0))))
+  (:_id (nth (:hits (:hits (:body response))) 0)))
 
-(defn query-id []  
+(defn query-id [i]  
   (http/get (str base-url 
                  search-suffix
-                 "_type:object&collection:es")
+                 "_type:asset&collection:es")
             {:query-params {:size 1
-                            :from 0
+                            :from i
                             :media "picture"}
              :content-type "application/json"
              :with-credentials? false}))
@@ -30,7 +31,7 @@
   (http/get
    (str base-url 
         search-suffix
-        "_type:asset&sourceId:" id)
+        "(_id:" id ")")
    {:content-type "application/json"
     :with-credentials? false}))
 

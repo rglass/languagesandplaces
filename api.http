@@ -1,10 +1,16 @@
-GET http://samlinger.natmus.dk/api/all/_search?q=_type:object&collection:es&size=1&from=0&media=picture
+GET http://samlinger.natmus.dk/api/all/_search?q=_type:object&collection:es&size=1&from=2&media=picture
 
 #
 #
 #
 
-GET http://samlinger.natmus.dk/api/all/_search?q=collection:es&sourceId:16815
+GET http://samlinger.natmus.dk/api/all/_search?q=_type:asset&collection:es&size=1&from=2&media=picture
+
+#
+#
+#
+
+GET http://samlinger.natmus.dk/api/all/_search?q=collection:es&sourceId:44005
 
 #
 #
@@ -51,7 +57,7 @@ GET http://samlinger.natmus.dk/api/all/_search?q=_type%3Aobject&collection%3Aes=
 #
 #
 
-GET http://samlinger.natmus.dk/api/all/_search?q=_type:asset&sourceId:16815
+GET http://samlinger.natmus.dk/api/all/_search?q=_type:asset&sourceId:44005
 
 #
 #
@@ -88,3 +94,9 @@ GET https://www.wikidata.org/wiki/Special:EntityData/Q7917207.json
 #
 
 GET https://www.wikidata.org/wiki/Special:EntityData/Q34038.json
+
+#
+#
+#
+
+GET http://samlinger.natmus.dk/api/all/_search?q=(_id:ES-44005)

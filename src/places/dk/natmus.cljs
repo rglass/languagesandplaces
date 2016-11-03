@@ -11,10 +11,9 @@
 (def search-suffix "/api/all/_search?q=")
 
 (defn id->image [id]
-  (str base-url "/" default-collection "/" id "/image/800/"))
+  (str base-url "/" id "/image/800/"))
 
 (defn extract-id [response]
-  ;;  (:sourceId (:_source (nth (:hits (:hits (:body response))) 0))))
   (:_id (nth (:hits (:hits (:body response))) 0)))
 
 (defn query-id [i]  

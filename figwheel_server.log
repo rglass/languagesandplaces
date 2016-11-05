@@ -21954,3 +21954,297 @@ notifying browser that file changed:  out/places/core.js
 [32mSuccessfully compiled "main.js" in 0.818 seconds.[0m
 notifying browser that file changed:  out/cljs_deps.js
 notifying browser that file changed:  out/places/dk/natmus.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.577 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.663 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:97  column:40  ----[0m
+
+  [1mUse of undeclared Var places.core/ends-with?[0m
+
+  [36m 93[0m  [36m(let [se-img (se-nat/id->image (<! (se-nat/call-image se-id)) se-id)[0m
+  [36m 94[0m  [36m      se-wi-img [0m
+  [36m 95[0m  [36m      (se-nat/extract-wiki-image[0m
+  [36m 96[0m  [36m       (<! (se-nat/call-wiki-image se-img)))][0m
+  [33m 97[0m  [1m  (if (not (or (nil? se-wi-img) (ends-with? se-wi-img "tif")))[0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var places.core/ends-with?[0m
+  [36m 98[0m  [36m    (-> svg (.append "svg:image")[0m
+  [36m 99[0m  [36m        (.attr [0m
+  [36m100[0m  [36m         {:xlink:href [0m
+  [36m101[0m  [36m          se-wi-img[0m
+  [36m102[0m  [36m          :class "left"[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:97  column:40  ----[0m
+
+  [1mUse of undeclared Var places.core/ends-with?[0m
+
+  [36m 93[0m  [36m(let [se-img (se-nat/id->image (<! (se-nat/call-image se-id)) se-id)[0m
+  [36m 94[0m  [36m      se-wi-img [0m
+  [36m 95[0m  [36m      (se-nat/extract-wiki-image[0m
+  [36m 96[0m  [36m       (<! (se-nat/call-wiki-image se-img)))][0m
+  [33m 97[0m  [1m  (if (not (or (nil? se-wi-img) (ends-with? se-wi-img "tif")))[0m
+  [0m   [0m  [33m                                 ^--- Use of undeclared Var places.core/ends-with?[0m
+  [36m 98[0m  [36m    (-> svg (.append "svg:image")[0m
+  [36m 99[0m  [36m        (.attr [0m
+  [36m100[0m  [36m         {:xlink:href [0m
+  [36m101[0m  [36m          se-wi-img[0m
+  [36m102[0m  [36m          :class "left"[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.572 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.784 seconds.[0m
+notifying browser that file changed:  out/goog/deps.js
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.713 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:98  column:35  ----[0m
+
+  [1mUse of undeclared Var places.core/last-index-of[0m
+
+  [36m 94[0m  [36m    se-wi-img [0m
+  [36m 95[0m  [36m    (se-nat/extract-wiki-image[0m
+  [36m 96[0m  [36m     (<! (se-nat/call-wiki-image se-img)))][0m
+  [36m 97[0m  [36m(if (not (or (nil? se-wi-img) [0m
+  [33m 98[0m  [1m             (= (subs (- (last-index-of se-wi-img) 3)[0m
+  [0m   [0m  [33m                          ^--- Use of undeclared Var places.core/last-index-of[0m
+  [36m 99[0m  [36m                      (last-index-of se-wi-img) se-wi-img) ".tif")))[0m
+  [36m100[0m  [36m  (do (-> svg (.append "svg:image")[0m
+  [36m101[0m  [36m      (.attr [0m
+  [36m102[0m  [36m       {:xlink:href [0m
+  [36m103[0m  [36m        se-wi-img[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:99  column:32  ----[0m
+
+  [1mUse of undeclared Var places.core/last-index-of[0m
+
+  [36m 95[0m  [36m    (se-nat/extract-wiki-image[0m
+  [36m 96[0m  [36m     (<! (se-nat/call-wiki-image se-img)))][0m
+  [36m 97[0m  [36m(if (not (or (nil? se-wi-img) [0m
+  [36m 98[0m  [36m             (= (subs (- (last-index-of se-wi-img) 3)[0m
+  [33m 99[0m  [1m                      (last-index-of se-wi-img) se-wi-img) ".tif")))[0m
+  [0m   [0m  [33m                       ^--- Use of undeclared Var places.core/last-index-of[0m
+  [36m100[0m  [36m  (do (-> svg (.append "svg:image")[0m
+  [36m101[0m  [36m      (.attr [0m
+  [36m102[0m  [36m       {:xlink:href [0m
+  [36m103[0m  [36m        se-wi-img[0m
+  [36m104[0m  [36m        :class "left"[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:98  column:35  ----[0m
+
+  [1mUse of undeclared Var places.core/last-index-of[0m
+
+  [36m 94[0m  [36m    se-wi-img [0m
+  [36m 95[0m  [36m    (se-nat/extract-wiki-image[0m
+  [36m 96[0m  [36m     (<! (se-nat/call-wiki-image se-img)))][0m
+  [36m 97[0m  [36m(if (not (or (nil? se-wi-img) [0m
+  [33m 98[0m  [1m             (= (subs (- (last-index-of se-wi-img) 3)[0m
+  [0m   [0m  [33m                          ^--- Use of undeclared Var places.core/last-index-of[0m
+  [36m 99[0m  [36m                      (last-index-of se-wi-img) se-wi-img) ".tif")))[0m
+  [36m100[0m  [36m  (do (-> svg (.append "svg:image")[0m
+  [36m101[0m  [36m      (.attr [0m
+  [36m102[0m  [36m       {:xlink:href [0m
+  [36m103[0m  [36m        se-wi-img[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:99  column:32  ----[0m
+
+  [1mUse of undeclared Var places.core/last-index-of[0m
+
+  [36m 95[0m  [36m    (se-nat/extract-wiki-image[0m
+  [36m 96[0m  [36m     (<! (se-nat/call-wiki-image se-img)))][0m
+  [36m 97[0m  [36m(if (not (or (nil? se-wi-img) [0m
+  [36m 98[0m  [36m             (= (subs (- (last-index-of se-wi-img) 3)[0m
+  [33m 99[0m  [1m                      (last-index-of se-wi-img) se-wi-img) ".tif")))[0m
+  [0m   [0m  [33m                       ^--- Use of undeclared Var places.core/last-index-of[0m
+  [36m100[0m  [36m  (do (-> svg (.append "svg:image")[0m
+  [36m101[0m  [36m      (.attr [0m
+  [36m102[0m  [36m       {:xlink:href [0m
+  [36m103[0m  [36m        se-wi-img[0m
+  [36m104[0m  [36m        :class "left"[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.885 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.489 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.567 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.207 seconds.[0m
+[36m----  Could not Analyze  src/places/core.cljs  ----[0m
+
+  [1mNo such namespace: cljs.core.string, could not locate cljs/core/string.cljs, cljs/core/string.cljc, or Closure namespace "cljs.core.string" [0m
+
+[36m----  Analysis Error : Please see src/places/core.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.221 seconds.[0m
+[36m----  Could not Analyze  src/places/core.cljs  ----[0m
+
+  [1mNo such namespace: cljs.core.string, could not locate cljs/core/string.cljs, cljs/core/string.cljc, or Closure namespace "cljs.core.string" [0m
+
+[36m----  Analysis Error : Please see src/places/core.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.483 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:121  column:22  ----[0m
+
+  [1mUse of undeclared Var places.core/counter-i[0m
+
+  [36m117[0m  [36m              (.log js/console (str "lev text: " (get-lev-text dk-tags se-tags) "sv tag: " se-tags "lev number" (get-lev-number dk-tags se-tags)))[0m
+  [36m118[0m  [36m              ;; change j if lev-prev > lev-now[0m
+  [36m119[0m  [36m            ))))))[0m
+  [36m120[0m  [36m    ;;(.log js/console (str counter-i ", " i ", " j))[0m
+  [33m121[0m  [1m    (recur (if (= 10 counter-i) 0 (inc counter-i))[0m
+  [0m   [0m  [33m                     ^--- Use of undeclared Var places.core/counter-i[0m
+  [36m122[0m  [36m           (if (> counter-i 9) (inc i) i)[0m
+  [36m123[0m  [36m           (inc j))))[0m
+  [36m124[0m  [36m[0m
+  [36m125[0m  [36m(enable-console-print!)[0m
+  [36m126[0m  [36m(.log js/console "start")[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:121  column:40  ----[0m
+
+  [1mUse of undeclared Var places.core/counter-i[0m
+
+  [36m117[0m  [36m              (.log js/console (str "lev text: " (get-lev-text dk-tags se-tags) "sv tag: " se-tags "lev number" (get-lev-number dk-tags se-tags)))[0m
+  [36m118[0m  [36m              ;; change j if lev-prev > lev-now[0m
+  [36m119[0m  [36m            ))))))[0m
+  [36m120[0m  [36m    ;;(.log js/console (str counter-i ", " i ", " j))[0m
+  [33m121[0m  [1m    (recur (if (= 10 counter-i) 0 (inc counter-i))[0m
+  [0m   [0m  [33m                                       ^--- Use of undeclared Var places.core/counter-i[0m
+  [36m122[0m  [36m           (if (> counter-i 9) (inc i) i)[0m
+  [36m123[0m  [36m           (inc j))))[0m
+  [36m124[0m  [36m[0m
+  [36m125[0m  [36m(enable-console-print!)[0m
+  [36m126[0m  [36m(.log js/console "start")[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:122  column:19  ----[0m
+
+  [1mUse of undeclared Var places.core/counter-i[0m
+
+  [36m118[0m  [36m              ;; change j if lev-prev > lev-now[0m
+  [36m119[0m  [36m            ))))))[0m
+  [36m120[0m  [36m    ;;(.log js/console (str counter-i ", " i ", " j))[0m
+  [36m121[0m  [36m    (recur (if (= 10 counter-i) 0 (inc counter-i))[0m
+  [33m122[0m  [1m           (if (> counter-i 9) (inc i) i)[0m
+  [0m   [0m  [33m                  ^--- Use of undeclared Var places.core/counter-i[0m
+  [36m123[0m  [36m           (inc j))))[0m
+  [36m124[0m  [36m[0m
+  [36m125[0m  [36m(enable-console-print!)[0m
+  [36m126[0m  [36m(.log js/console "start")[0m
+  [36m127[0m  [36m(make-se)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:122  column:37  ----[0m
+
+  [1mUse of undeclared Var places.core/i[0m
+
+  [36m118[0m  [36m              ;; change j if lev-prev > lev-now[0m
+  [36m119[0m  [36m            ))))))[0m
+  [36m120[0m  [36m    ;;(.log js/console (str counter-i ", " i ", " j))[0m
+  [36m121[0m  [36m    (recur (if (= 10 counter-i) 0 (inc counter-i))[0m
+  [33m122[0m  [1m           (if (> counter-i 9) (inc i) i)[0m
+  [0m   [0m  [33m                                    ^--- Use of undeclared Var places.core/i[0m
+  [36m123[0m  [36m           (inc j))))[0m
+  [36m124[0m  [36m[0m
+  [36m125[0m  [36m(enable-console-print!)[0m
+  [36m126[0m  [36m(.log js/console "start")[0m
+  [36m127[0m  [36m(make-se)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:122  column:40  ----[0m
+
+  [1mUse of undeclared Var places.core/i[0m
+
+  [36m118[0m  [36m              ;; change j if lev-prev > lev-now[0m
+  [36m119[0m  [36m            ))))))[0m
+  [36m120[0m  [36m    ;;(.log js/console (str counter-i ", " i ", " j))[0m
+  [36m121[0m  [36m    (recur (if (= 10 counter-i) 0 (inc counter-i))[0m
+  [33m122[0m  [1m           (if (> counter-i 9) (inc i) i)[0m
+  [0m   [0m  [33m                                       ^--- Use of undeclared Var places.core/i[0m
+  [36m123[0m  [36m           (inc j))))[0m
+  [36m124[0m  [36m[0m
+  [36m125[0m  [36m(enable-console-print!)[0m
+  [36m126[0m  [36m(.log js/console "start")[0m
+  [36m127[0m  [36m(make-se)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:123  column:17  ----[0m
+
+  [1mUse of undeclared Var places.core/j[0m
+
+  [36m119[0m  [36m            ))))))[0m
+  [36m120[0m  [36m    ;;(.log js/console (str counter-i ", " i ", " j))[0m
+  [36m121[0m  [36m    (recur (if (= 10 counter-i) 0 (inc counter-i))[0m
+  [36m122[0m  [36m           (if (> counter-i 9) (inc i) i)[0m
+  [33m123[0m  [1m           (inc j))))[0m
+  [0m   [0m  [33m                ^--- Use of undeclared Var places.core/j[0m
+  [36m124[0m  [36m[0m
+  [36m125[0m  [36m(enable-console-print!)[0m
+  [36m126[0m  [36m(.log js/console "start")[0m
+  [36m127[0m  [36m(make-se)[0m
+  [36m128[0m  [36m(.log js/console "end")[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[31mFailed to compile "main.js" in 0.334 seconds.[0m
+[36m----  Could not Analyze  src/places/core.cljs   line:121  column:5  ----[0m
+
+  [1mrecur argument count mismatch at line 121 src/places/core.cljs[0m
+
+  [36m119[0m  [36m        ))))))[0m
+  [36m120[0m  [36m;;(.log js/console (str counter-i ", " i ", " j))[0m
+  [33m121[0m  [1m(recur (if (= 10 counter-i) 0 (inc counter-i))[0m
+  [0m   [0m  [33m^--- recur argument count mismatch at line 121 src/places/core.cljs[0m
+  [36m122[0m  [36m       (if (> counter-i 9) (inc i) i)[0m
+  [36m123[0m  [36m       (inc j))))[0m
+
+[36m----  Analysis Error : Please see src/places/core.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.447 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.458 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.602 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.568 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.217 seconds.[0m
+[36m----  Could not Read  src/places/core.cljs   line:18  column:18  ----[0m
+
+  [1mInvalid token: top:[0m
+
+  [36m16[0m  [36m(def width 960)[0m
+  [36m17[0m  [36m(def height 600)[0m
+  [33m18[0m  [1m(def margin {top: 20, right: 10, bottom: 20, left: 10})[0m
+  [0m  [0m  [33m                 ^--- Invalid token: top:[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m[0m
+  [36m21[0m  [36m(def svg (-> d3 (.select "#landp-node") (.append "svg")[0m
+
+[36m----  Reader Error : Please see src/places/core.cljs  ----[0m

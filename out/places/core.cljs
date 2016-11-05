@@ -8,18 +8,24 @@
             [clj-fuzzy.metrics :as metrics]
             [clj-fuzzy.stemmers :as stemmers]
             [cljs.core.async :refer [<! chan put! >!]]
-            [strokes :refer [d3]]))
+            [strokes :refer [d3]]
+            [clojure.string :refer [ends-with?]]))
 
 (strokes/bootstrap)
 
-(def width 960)
-(def height 600)
+;;(def width 960)
+;;(def height 600)
+(def margin {:top 20 :right 10 :bottom 20 :left 10})
+(def width (- 960 (:left margin) (:right margin)))
+(def height (- 500 (:top margin) (:bottom margin)))
 
 (def svg (-> d3 (.select "#landp-node") (.append "svg")
-      (.attr {:width width :height height})
-    (.append "g")
-      (.attr {:transform (str "translate(32," (/ height 2) ")")})))
-
+      (.attr {:width (+ width (:left margin) (:right margin)) 
+              :height (+ height (:top margin) (:bottom margin))})
+      (.append "g")
+;;      (.attr {:transform (str "translate(32," (/ height 2) ")")})))
+      (.attr {:transform 
+              (str "translate(" (:left margin) ", " (:top margin) ")")})))
 (defn reduced-lev [xs y]
   (reduce
    (fn [x y] (if (> (second x) (second y)) x y))
@@ -94,16 +100,19 @@
             se-wi-img 
             (se-nat/extract-wiki-image
              (<! (se-nat/call-wiki-image se-img)))]
-      (-> svg (.append "svg:image")
-          (.attr 
-           {:xlink:href 
-            se-wi-img
-            :class "left"
-            :width 400
-            :height 400
-            :x (+ 500 (+ i 15))
-            :y (+ i 15)}))
-
+        (.log js/console se-wi-img)
+        (if (not (nil? se-wi-img))
+          (if (not (ends-with? se-wi-img "tif"))
+            (do (-> svg (.append "svg:image")
+                    (.attr 
+                     {:xlink:href 
+                      se-wi-img
+                      :class "left"
+                      :width 400
+                      :height 400
+                      :x (+ 500 (+ i 15))
+                      :y (+ i 15)}))
+                (.log js/console se-wi-img))))
       (let [dk-tags (dk-nat/extract-tags (<! (dk-nat/id->tags dk-id)))]
         (if (not (se-nat/tags? se-id entity))
           (do

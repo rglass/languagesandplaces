@@ -4,11 +4,31 @@
         <title>places</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<style>
-	  text { font: bold 48px monospace; }
-	  .update { fill: #bbb; }
+	  body {
+	  background:#fff;
+	  }
+	  text {
+	  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 15.4px;
+	  }
+	  .enter {
+	  fill: green;
+	  }
+	  .update {
+	  fill: #bbb;
+	  }
+	  .exit {
+	  fill: brown;
+	  }
+	  
 	</style>
     </head>
     <body>
+      <span id="landp-node"></span>
       <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
       <script src="main.js" type="text/javascript"></script>
     </body>

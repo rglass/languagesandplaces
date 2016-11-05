@@ -20807,3 +20807,1138 @@ notifying browser that file changed:  out/places/core.js
 [32mSuccessfully compiled "main.js" in 0.314 seconds.[0m
 notifying browser that file changed:  out/cljs_deps.js
 notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.646 seconds.[0m
+notifying browser that file changed:  out/goog/deps.js
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:61  column:11  ----[0m
+
+  [1mUse of undeclared Var places.core/text[0m
+
+  [36m57[0m  [36m    (do[0m
+  [36m58[0m  [36m      (let [t (se-nat/id->entity se-id (<! (se-nat/call-base-entity se-id)))[0m
+  [36m59[0m  [36m            se-tags (se-nat/extract-tags (<! (se-nat/entity->tag t)) t)][0m
+  [36m60[0m  [36m        (.log js/console "dk: " (prn dk-tags) ", se: " (prn se-tags))[0m
+  [33m61[0m  [1m(-> text (.enter) (.append "text")[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var places.core/text[0m
+  [36m62[0m  [36m    (.attr [0m
+  [36m63[0m  [36m     {:xlink:href [0m
+  [36m64[0m  [36m      (dk-nat/id->image [0m
+  [36m65[0m  [36m       (clojure.string/replace [0m
+  [36m66[0m  [36m        (dk-nat/extract-id dk-response)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.549 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:61  column:11  ----[0m
+
+  [1mUse of undeclared Var places.core/text[0m
+
+  [36m57[0m  [36m    (do[0m
+  [36m58[0m  [36m      (let [t (se-nat/id->entity se-id (<! (se-nat/call-base-entity se-id)))[0m
+  [36m59[0m  [36m            se-tags (se-nat/extract-tags (<! (se-nat/entity->tag t)) t)][0m
+  [36m60[0m  [36m        (.log js/console "dk: " (prn dk-tags) ", se: " (prn se-tags))[0m
+  [33m61[0m  [1m(-> text (.enter) (.append "text")[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var places.core/text[0m
+  [36m62[0m  [36m    (.attr [0m
+  [36m63[0m  [36m     {:text "test"[0m
+  [36m64[0m  [36m      :class "enter"[0m
+  [36m65[0m  [36m      :x 0[0m
+  [36m66[0m  [36m      :dy ".35em"}))[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.559 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.498 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.429 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.445 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.428 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.427 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.418 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.399 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.373 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.337 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.449 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.327 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.321 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.369 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.339 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.342 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.332 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.366 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.329 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.159 seconds.[0m
+[36m----  Could not Read  src/places/core.cljs   line:21  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 21 and column 1[0m
+
+  [36m19[0m  [36m      (.attr {:width width :height height})))[0m
+  [36m20[0m  [36m[0m
+  [33m21[0m  [1m(defn make-se [][0m
+  [0m  [0m  [33m^--- EOF while reading, starting at line 21 and column 1[0m
+  [36m22[0m  [36m  (-> svg (.append "text")[0m
+  [36m23[0m  [36m      (.attr [0m
+  [36m24[0m  [36m       {:class "enter"[0m
+
+[36m----  Reader Error : Please see src/places/core.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.176 seconds.[0m
+[36m----  Could not Read  src/places/core.cljs   line:21  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 21 and column 1[0m
+
+  [36m19[0m  [36m      (.attr {:width width :height height})))[0m
+  [36m20[0m  [36m[0m
+  [33m21[0m  [1m(defn make-se [][0m
+  [0m  [0m  [33m^--- EOF while reading, starting at line 21 and column 1[0m
+  [36m22[0m  [36m  (-> svg (.append "text")[0m
+  [36m23[0m  [36m      (.attr [0m
+  [36m24[0m  [36m       {:class "enter"[0m
+
+[36m----  Reader Error : Please see src/places/core.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:27  column:22  ----[0m
+
+  [1mUse of undeclared Var places.core/i[0m
+
+  [36m23[0m  [36m    (.attr [0m
+  [36m24[0m  [36m     {:class "enter"[0m
+  [36m25[0m  [36m      :width 400[0m
+  [36m26[0m  [36m      :height 400[0m
+  [33m27[0m  [1m      :x (+ 500 (+ i 15))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var places.core/i[0m
+  [36m28[0m  [36m      :y (+ i 15)})[0m
+  [36m29[0m  [36m    (.text "anfang"))[0m
+  [36m30[0m  [36m(go-loop [i 1 [0m
+  [36m31[0m  [36m          j 1][0m
+  [36m32[0m  [36m  (let [dk-response (<! (dk-nat/query-id i))[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:28  column:15  ----[0m
+
+  [1mUse of undeclared Var places.core/i[0m
+
+  [36m24[0m  [36m     {:class "enter"[0m
+  [36m25[0m  [36m      :width 400[0m
+  [36m26[0m  [36m      :height 400[0m
+  [36m27[0m  [36m      :x (+ 500 (+ i 15))[0m
+  [33m28[0m  [1m      :y (+ i 15)})[0m
+  [0m  [0m  [33m            ^--- Use of undeclared Var places.core/i[0m
+  [36m29[0m  [36m    (.text "anfang"))[0m
+  [36m30[0m  [36m(go-loop [i 1 [0m
+  [36m31[0m  [36m          j 1][0m
+  [36m32[0m  [36m  (let [dk-response (<! (dk-nat/query-id i))[0m
+  [36m33[0m  [36m        dk-id (dk-nat/extract-id dk-response)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 3.467 seconds.[0m
+notifying browser that file changed:  out/goog/deps.js
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:27  column:22  ----[0m
+
+  [1mUse of undeclared Var places.core/i[0m
+
+  [36m23[0m  [36m    (.attr [0m
+  [36m24[0m  [36m     {:class "enter"[0m
+  [36m25[0m  [36m      :width 400[0m
+  [36m26[0m  [36m      :height 400[0m
+  [33m27[0m  [1m      :x (+ 500 (+ i 15))[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var places.core/i[0m
+  [36m28[0m  [36m      :y (+ i 15)})[0m
+  [36m29[0m  [36m    (.text "anfang"))[0m
+  [36m30[0m  [36m(go-loop [i 1 [0m
+  [36m31[0m  [36m          j 1][0m
+  [36m32[0m  [36m  (let [dk-response (<! (dk-nat/query-id i))[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:28  column:15  ----[0m
+
+  [1mUse of undeclared Var places.core/i[0m
+
+  [36m24[0m  [36m     {:class "enter"[0m
+  [36m25[0m  [36m      :width 400[0m
+  [36m26[0m  [36m      :height 400[0m
+  [36m27[0m  [36m      :x (+ 500 (+ i 15))[0m
+  [33m28[0m  [1m      :y (+ i 15)})[0m
+  [0m  [0m  [33m            ^--- Use of undeclared Var places.core/i[0m
+  [36m29[0m  [36m    (.text "anfang"))[0m
+  [36m30[0m  [36m(go-loop [i 1 [0m
+  [36m31[0m  [36m          j 1][0m
+  [36m32[0m  [36m  (let [dk-response (<! (dk-nat/query-id i))[0m
+  [36m33[0m  [36m        dk-id (dk-nat/extract-id dk-response)[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.597 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:25  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m21[0m  [36m      (.attr {:width width :height height})[0m
+  [36m22[0m  [36m    (.append "g")[0m
+  [36m23[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m24[0m  [36m[0m
+  [33m25[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m26[0m  [36m  ; DATA JOIN[0m
+  [36m27[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m28[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m29[0m  [36m    ; UPDATE[0m
+  [36m30[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.568 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:25  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m21[0m  [36m      (.attr {:width width :height height})[0m
+  [36m22[0m  [36m    (.append "g")[0m
+  [36m23[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m24[0m  [36m[0m
+  [33m25[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m26[0m  [36m  ; DATA JOIN[0m
+  [36m27[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m28[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m29[0m  [36m    ; UPDATE[0m
+  [36m30[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.519 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:25  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m21[0m  [36m      (.attr {:width width :height height})[0m
+  [36m22[0m  [36m    (.append "g")[0m
+  [36m23[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m24[0m  [36m[0m
+  [33m25[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m26[0m  [36m  ; DATA JOIN[0m
+  [36m27[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m28[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m29[0m  [36m    ; UPDATE[0m
+  [36m30[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.443 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:25  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m21[0m  [36m      (.attr {:width width :height height})[0m
+  [36m22[0m  [36m    (.append "g")[0m
+  [36m23[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m24[0m  [36m[0m
+  [33m25[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m26[0m  [36m  ; DATA JOIN[0m
+  [36m27[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m28[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m29[0m  [36m    ; UPDATE[0m
+  [36m30[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.444 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:25  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m21[0m  [36m      (.attr {:width width :height height})[0m
+  [36m22[0m  [36m    (.append "g")[0m
+  [36m23[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m24[0m  [36m[0m
+  [33m25[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m26[0m  [36m  ; DATA JOIN[0m
+  [36m27[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m28[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m29[0m  [36m    ; UPDATE[0m
+  [36m30[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.422 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:25  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m21[0m  [36m      (.attr {:width width :height height})[0m
+  [36m22[0m  [36m    (.append "g")[0m
+  [36m23[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m24[0m  [36m[0m
+  [33m25[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m26[0m  [36m  ; DATA JOIN[0m
+  [36m27[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m28[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m29[0m  [36m    ; UPDATE[0m
+  [36m30[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:68  column:3  ----[0m
+
+  [1mWrong number of args (2) passed to places.core/update[0m
+
+  [36m64[0m  [36m;; (def svg (-> d3 (.select "body") (.append "svg")[0m
+  [36m65[0m  [36m;;       (.attr {:width width :height height})))[0m
+  [36m66[0m  [36m[0m
+  [36m67[0m  [36m(defn make-se [][0m
+  [33m68[0m  [1m  (go-loop [i 1 [0m
+  [0m  [0m  [33m  ^--- Wrong number of args (2) passed to places.core/update[0m
+  [36m69[0m  [36m            j 1][0m
+  [36m70[0m  [36m    (let [dk-response (<! (dk-nat/query-id i))[0m
+  [36m71[0m  [36m          dk-id (dk-nat/extract-id dk-response)[0m
+  [36m72[0m  [36m          se-id (se-nat/extract-id (<! (se-nat/query-id j)))[0m
+  [36m73[0m  [36m          entity (<! (se-nat/call-base-entity se-id))][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.451 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:25  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m21[0m  [36m      (.attr {:width width :height height})[0m
+  [36m22[0m  [36m    (.append "g")[0m
+  [36m23[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m24[0m  [36m[0m
+  [33m25[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m26[0m  [36m  ; DATA JOIN[0m
+  [36m27[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m28[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m29[0m  [36m    ; UPDATE[0m
+  [36m30[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.415 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:25  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m21[0m  [36m      (.attr {:width width :height height})[0m
+  [36m22[0m  [36m    (.append "g")[0m
+  [36m23[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m24[0m  [36m[0m
+  [33m25[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m26[0m  [36m  ; DATA JOIN[0m
+  [36m27[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m28[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m29[0m  [36m    ; UPDATE[0m
+  [36m30[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.388 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:23  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m19[0m  [36m      (.attr {:width width :height height})[0m
+  [36m20[0m  [36m    (.append "g")[0m
+  [36m21[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m22[0m  [36m[0m
+  [33m23[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m24[0m  [36m  ; DATA JOIN[0m
+  [36m25[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m26[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m27[0m  [36m    ; UPDATE[0m
+  [36m28[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.513 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:23  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m19[0m  [36m      (.attr {:width width :height height})[0m
+  [36m20[0m  [36m    (.append "g")[0m
+  [36m21[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m22[0m  [36m[0m
+  [33m23[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m24[0m  [36m  ; DATA JOIN[0m
+  [36m25[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m26[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m27[0m  [36m    ; UPDATE[0m
+  [36m28[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:66  column:3  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/vec[0m
+
+  [36m62[0m  [36m;; (def svg (-> d3 (.select "body") (.append "svg")[0m
+  [36m63[0m  [36m;;       (.attr {:width width :height height})))[0m
+  [36m64[0m  [36m[0m
+  [36m65[0m  [36m(defn make-se [][0m
+  [33m66[0m  [1m  (go-loop [i 1 [0m
+  [0m  [0m  [33m  ^--- Wrong number of args (2) passed to cljs.core/vec[0m
+  [36m67[0m  [36m            j 1][0m
+  [36m68[0m  [36m    (let [dk-response (<! (dk-nat/query-id i))[0m
+  [36m69[0m  [36m          dk-id (dk-nat/extract-id dk-response)[0m
+  [36m70[0m  [36m          se-id (se-nat/extract-id (<! (se-nat/query-id j)))[0m
+  [36m71[0m  [36m          entity (<! (se-nat/call-base-entity se-id))][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.406 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:23  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m19[0m  [36m      (.attr {:width width :height height})[0m
+  [36m20[0m  [36m    (.append "g")[0m
+  [36m21[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m22[0m  [36m[0m
+  [33m23[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m24[0m  [36m  ; DATA JOIN[0m
+  [36m25[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m26[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m27[0m  [36m    ; UPDATE[0m
+  [36m28[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:66  column:3  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/vec[0m
+
+  [36m62[0m  [36m;; (def svg (-> d3 (.select "body") (.append "svg")[0m
+  [36m63[0m  [36m;;       (.attr {:width width :height height})))[0m
+  [36m64[0m  [36m[0m
+  [36m65[0m  [36m(defn make-se [][0m
+  [33m66[0m  [1m  (go-loop [i 1 [0m
+  [0m  [0m  [33m  ^--- Wrong number of args (2) passed to cljs.core/vec[0m
+  [36m67[0m  [36m            j 1][0m
+  [36m68[0m  [36m    (let [dk-response (<! (dk-nat/query-id i))[0m
+  [36m69[0m  [36m          dk-id (dk-nat/extract-id dk-response)[0m
+  [36m70[0m  [36m          se-id (se-nat/extract-id (<! (se-nat/query-id j)))[0m
+  [36m71[0m  [36m          entity (<! (se-nat/call-base-entity se-id))][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.37 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:23  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m19[0m  [36m      (.attr {:width width :height height})[0m
+  [36m20[0m  [36m    (.append "g")[0m
+  [36m21[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m22[0m  [36m[0m
+  [33m23[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m24[0m  [36m  ; DATA JOIN[0m
+  [36m25[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m26[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m27[0m  [36m    ; UPDATE[0m
+  [36m28[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.415 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:23  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m19[0m  [36m      (.attr {:width width :height height})[0m
+  [36m20[0m  [36m    (.append "g")[0m
+  [36m21[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m22[0m  [36m[0m
+  [33m23[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m24[0m  [36m  ; DATA JOIN[0m
+  [36m25[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m26[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m27[0m  [36m    ; UPDATE[0m
+  [36m28[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.339 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:23  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m19[0m  [36m      (.attr {:width width :height height})[0m
+  [36m20[0m  [36m    (.append "g")[0m
+  [36m21[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m22[0m  [36m[0m
+  [33m23[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m24[0m  [36m  ; DATA JOIN[0m
+  [36m25[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m26[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m27[0m  [36m    ; UPDATE[0m
+  [36m28[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:106  column:24  ----[0m
+
+  [1mUse of undeclared Var places.core/get-lev[0m
+
+  [36m102[0m  [36m            (let [t (se-nat/id->entity se-id (<! (se-nat/call-base-entity se-id)))[0m
+  [36m103[0m  [36m                  se-tags (se-nat/extract-tags (<! (se-nat/entity->tag t)) t)][0m
+  [36m104[0m  [36m              (.log js/console "dk: " (prn dk-tags) ", se: " (prn se-tags))[0m
+  [36m105[0m  [36m              [0m
+  [33m106[0m  [1m              (update (get-lev dk-tags se-tags) (first dk-tags) se-tags))[0m
+  [0m   [0m  [33m                       ^--- Use of undeclared Var places.core/get-lev[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m              ;;(swap! se-tags conj nat-se-tags)[0m
+  [36m109[0m  [36m              ;;(.log js/console (str j ", " se-id (prn se-tags)))[0m
+  [36m110[0m  [36m            ;;(if (not (empty? nat-se-tags))[0m
+  [36m111[0m  [36m              ;;(.write js/document (html [:img {:src (se-nat/se-id->image (<! (se-nat/call-image se-id)) se-id)}]))))))))[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:66  column:3  ----[0m
+
+  [1mWrong number of args (3) passed to places.core/update[0m
+
+  [36m62[0m  [36m;; (def svg (-> d3 (.select "body") (.append "svg")[0m
+  [36m63[0m  [36m;;       (.attr {:width width :height height})))[0m
+  [36m64[0m  [36m[0m
+  [36m65[0m  [36m(defn make-se [][0m
+  [33m66[0m  [1m  (go-loop [i 1 [0m
+  [0m  [0m  [33m  ^--- Wrong number of args (3) passed to places.core/update[0m
+  [36m67[0m  [36m            j 1][0m
+  [36m68[0m  [36m    (let [dk-response (<! (dk-nat/query-id i))[0m
+  [36m69[0m  [36m          dk-id (dk-nat/extract-id dk-response)[0m
+  [36m70[0m  [36m          se-id (se-nat/extract-id (<! (se-nat/query-id j)))[0m
+  [36m71[0m  [36m          entity (<! (se-nat/call-base-entity se-id))][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:114  column:17  ----[0m
+
+  [1mUse of undeclared Var places.core/i[0m
+
+  [36m110[0m  [36m            ;;(if (not (empty? nat-se-tags))[0m
+  [36m111[0m  [36m              ;;(.write js/document (html [:img {:src (se-nat/se-id->image (<! (se-nat/call-image se-id)) se-id)}]))))))))[0m
+  [36m112[0m  [36m            ;;(.log js/console (prn (map #(metrics/levenshtein %1 %2) (map vector dk-tags se-tags))))))))))[0m
+  [36m113[0m  [36m            ))))))[0m
+  [33m114[0m  [1m    (recur (inc i) (inc j))))[0m
+  [0m   [0m  [33m                ^--- Use of undeclared Var places.core/i[0m
+  [36m115[0m  [36m[0m
+  [36m116[0m  [36m(enable-console-print!)[0m
+  [36m117[0m  [36m(.log js/console "start")[0m
+  [36m118[0m  [36m(make-se)[0m
+  [36m119[0m  [36m(.log js/console "end")[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:114  column:25  ----[0m
+
+  [1mUse of undeclared Var places.core/j[0m
+
+  [36m110[0m  [36m            ;;(if (not (empty? nat-se-tags))[0m
+  [36m111[0m  [36m              ;;(.write js/document (html [:img {:src (se-nat/se-id->image (<! (se-nat/call-image se-id)) se-id)}]))))))))[0m
+  [36m112[0m  [36m            ;;(.log js/console (prn (map #(metrics/levenshtein %1 %2) (map vector dk-tags se-tags))))))))))[0m
+  [36m113[0m  [36m            ))))))[0m
+  [33m114[0m  [1m    (recur (inc i) (inc j))))[0m
+  [0m   [0m  [33m                        ^--- Use of undeclared Var places.core/j[0m
+  [36m115[0m  [36m[0m
+  [36m116[0m  [36m(enable-console-print!)[0m
+  [36m117[0m  [36m(.log js/console "start")[0m
+  [36m118[0m  [36m(make-se)[0m
+  [36m119[0m  [36m(.log js/console "end")[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[31mFailed to compile "main.js" in 0.21 seconds.[0m
+[36m----  Could not Analyze  src/places/core.cljs   line:114  column:5  ----[0m
+
+  [1mrecur argument count mismatch at line 114 /Users/roman/Dropbox/Projects/ClojureScript/places/src/places/core.cljs[0m
+
+  [36m112[0m  [36m            ;;(.log js/console (prn (map #(metrics/levenshtein %1 %2) (map vector dk-tags se-tags))))))))))[0m
+  [36m113[0m  [36m            ))))))[0m
+  [33m114[0m  [1m    (recur (inc i) (inc j))))[0m
+  [0m   [0m  [33m    ^--- recur argument count mismatch at line 114 /Users/roman/Dropbox/Projects/ClojureScript/places/src/places/core.cljs[0m
+  [36m115[0m  [36m[0m
+  [36m116[0m  [36m(enable-console-print!)[0m
+  [36m117[0m  [36m(.log js/console "start")[0m
+
+[36m----  Analysis Error : Please see src/places/core.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:23  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m19[0m  [36m      (.attr {:width width :height height})[0m
+  [36m20[0m  [36m    (.append "g")[0m
+  [36m21[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m22[0m  [36m[0m
+  [33m23[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m24[0m  [36m  ; DATA JOIN[0m
+  [36m25[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m26[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m27[0m  [36m    ; UPDATE[0m
+  [36m28[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:106  column:24  ----[0m
+
+  [1mUse of undeclared Var places.core/get-lev[0m
+
+  [36m102[0m  [36m            (let [t (se-nat/id->entity se-id (<! (se-nat/call-base-entity se-id)))[0m
+  [36m103[0m  [36m                  se-tags (se-nat/extract-tags (<! (se-nat/entity->tag t)) t)][0m
+  [36m104[0m  [36m              (.log js/console "dk: " (prn dk-tags) ", se: " (prn se-tags))[0m
+  [36m105[0m  [36m              [0m
+  [33m106[0m  [1m              (update (get-lev dk-tags se-tags) (first dk-tags) se-tags)[0m
+  [0m   [0m  [33m                       ^--- Use of undeclared Var places.core/get-lev[0m
+  [36m107[0m  [36m[0m
+  [36m108[0m  [36m              ;;(swap! se-tags conj nat-se-tags)[0m
+  [36m109[0m  [36m              ;;(.log js/console (str j ", " se-id (prn se-tags)))[0m
+  [36m110[0m  [36m            ;;(if (not (empty? nat-se-tags))[0m
+  [36m111[0m  [36m              ;;(.write js/document (html [:img {:src (se-nat/se-id->image (<! (se-nat/call-image se-id)) se-id)}]))))))))[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:66  column:3  ----[0m
+
+  [1mWrong number of args (3) passed to places.core/update[0m
+
+  [36m62[0m  [36m;; (def svg (-> d3 (.select "body") (.append "svg")[0m
+  [36m63[0m  [36m;;       (.attr {:width width :height height})))[0m
+  [36m64[0m  [36m[0m
+  [36m65[0m  [36m(defn make-se [][0m
+  [33m66[0m  [1m  (go-loop [i 1 [0m
+  [0m  [0m  [33m  ^--- Wrong number of args (3) passed to places.core/update[0m
+  [36m67[0m  [36m            j 1][0m
+  [36m68[0m  [36m    (let [dk-response (<! (dk-nat/query-id i))[0m
+  [36m69[0m  [36m          dk-id (dk-nat/extract-id dk-response)[0m
+  [36m70[0m  [36m          se-id (se-nat/extract-id (<! (se-nat/query-id j)))[0m
+  [36m71[0m  [36m          entity (<! (se-nat/call-base-entity se-id))][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.331 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:30  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m26[0m  [36m               x[0m
+  [36m27[0m  [36m               y))[0m
+  [36m28[0m  [36m   (map vector xs (map (fn [x] (metrics/levenshtein x) xs)))))[0m
+  [36m29[0m  [36m[0m
+  [33m30[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m31[0m  [36m  ; DATA JOIN[0m
+  [36m32[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m33[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m34[0m  [36m    ; UPDATE[0m
+  [36m35[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:73  column:3  ----[0m
+
+  [1mWrong number of args (3) passed to places.core/update[0m
+
+  [36m69[0m  [36m;; (def svg (-> d3 (.select "body") (.append "svg")[0m
+  [36m70[0m  [36m;;       (.attr {:width width :height height})))[0m
+  [36m71[0m  [36m[0m
+  [36m72[0m  [36m(defn make-se [][0m
+  [33m73[0m  [1m  (go-loop [i 1 [0m
+  [0m  [0m  [33m  ^--- Wrong number of args (3) passed to places.core/update[0m
+  [36m74[0m  [36m            j 1][0m
+  [36m75[0m  [36m    (let [dk-response (<! (dk-nat/query-id i))[0m
+  [36m76[0m  [36m          dk-id (dk-nat/extract-id dk-response)[0m
+  [36m77[0m  [36m          se-id (se-nat/extract-id (<! (se-nat/query-id j)))[0m
+  [36m78[0m  [36m          entity (<! (se-nat/call-base-entity se-id))][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.371 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.207 seconds.[0m
+[36m----  Could not Read  src/places/core.cljs   line:29  column:63  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m27[0m  [36m               x[0m
+  [36m28[0m  [36m               y))[0m
+  [33m29[0m  [1m   (map vector xs (map (fn [x] (metrics/levenshtein x) xs)))))[0m
+  [0m  [0m  [33m                                                              ^--- Unmatched delimiter )[0m
+  [36m30[0m  [36m[0m
+  [36m31[0m  [36m(defn update [data][0m
+  [36m32[0m  [36m  ; DATA JOIN[0m
+
+[36m----  Reader Error : Please see src/places/core.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:31  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m27[0m  [36m               x[0m
+  [36m28[0m  [36m               y))[0m
+  [36m29[0m  [36m   (map vector xs (map (fn [x] (metrics/levenshtein x) xs))))[0m
+  [36m30[0m  [36m[0m
+  [33m31[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m32[0m  [36m  ; DATA JOIN[0m
+  [36m33[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m34[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m35[0m  [36m    ; UPDATE[0m
+  [36m36[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:74  column:3  ----[0m
+
+  [1mWrong number of args (3) passed to places.core/update[0m
+
+  [36m70[0m  [36m;; (def svg (-> d3 (.select "body") (.append "svg")[0m
+  [36m71[0m  [36m;;       (.attr {:width width :height height})))[0m
+  [36m72[0m  [36m[0m
+  [36m73[0m  [36m(defn make-se [][0m
+  [33m74[0m  [1m  (go-loop [i 1 [0m
+  [0m  [0m  [33m  ^--- Wrong number of args (3) passed to places.core/update[0m
+  [36m75[0m  [36m            j 1][0m
+  [36m76[0m  [36m    (let [dk-response (<! (dk-nat/query-id i))[0m
+  [36m77[0m  [36m          dk-id (dk-nat/extract-id dk-response)[0m
+  [36m78[0m  [36m          se-id (se-nat/extract-id (<! (se-nat/query-id j)))[0m
+  [36m79[0m  [36m          entity (<! (se-nat/call-base-entity se-id))][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.478 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:31  column:1  ----[0m
+
+  [1mupdate already refers to: cljs.core/update being replaced by: places.core/update[0m
+
+  [36m27[0m  [36m  ;;              x[0m
+  [36m28[0m  [36m  ;;              y))[0m
+  [36m29[0m  [36m  ;;  (map vector xs (map (fn [x] (metrics/levenshtein x) xs))))[0m
+  [36m30[0m  [36m[0m
+  [33m31[0m  [1m(defn update [data][0m
+  [0m  [0m  [33m^--- update already refers to: cljs.core/update being replaced by: places.core/update[0m
+  [36m32[0m  [36m  ; DATA JOIN[0m
+  [36m33[0m  [36m  ; Join new data with old elements, if any.[0m
+  [36m34[0m  [36m  (let [text (-> svg (.selectAll "text") (.data data))][0m
+  [36m35[0m  [36m    ; UPDATE[0m
+  [36m36[0m  [36m    ; Update old elements as needed[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:74  column:3  ----[0m
+
+  [1mWrong number of args (3) passed to places.core/update[0m
+
+  [36m70[0m  [36m;; (def svg (-> d3 (.select "body") (.append "svg")[0m
+  [36m71[0m  [36m;;       (.attr {:width width :height height})))[0m
+  [36m72[0m  [36m[0m
+  [36m73[0m  [36m(defn make-se [][0m
+  [33m74[0m  [1m  (go-loop [i 1 [0m
+  [0m  [0m  [33m  ^--- Wrong number of args (3) passed to places.core/update[0m
+  [36m75[0m  [36m            j 1][0m
+  [36m76[0m  [36m    (let [dk-response (<! (dk-nat/query-id i))[0m
+  [36m77[0m  [36m          dk-id (dk-nat/extract-id dk-response)[0m
+  [36m78[0m  [36m          se-id (se-nat/extract-id (<! (se-nat/query-id j)))[0m
+  [36m79[0m  [36m          entity (<! (se-nat/call-base-entity se-id))][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.465 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:74  column:3  ----[0m
+
+  [1mWrong number of args (3) passed to places.core/update-text[0m
+
+  [36m70[0m  [36m;; (def svg (-> d3 (.select "body") (.append "svg")[0m
+  [36m71[0m  [36m;;       (.attr {:width width :height height})))[0m
+  [36m72[0m  [36m[0m
+  [36m73[0m  [36m(defn make-se [][0m
+  [33m74[0m  [1m  (go-loop [i 1 [0m
+  [0m  [0m  [33m  ^--- Wrong number of args (3) passed to places.core/update-text[0m
+  [36m75[0m  [36m            j 1][0m
+  [36m76[0m  [36m    (let [dk-response (<! (dk-nat/query-id i))[0m
+  [36m77[0m  [36m          dk-id (dk-nat/extract-id dk-response)[0m
+  [36m78[0m  [36m          se-id (se-nat/extract-id (<! (se-nat/query-id j)))[0m
+  [36m79[0m  [36m          entity (<! (se-nat/call-base-entity se-id))][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.351 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.326 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.362 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.323 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.291 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.304 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.298 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.298 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.278 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.434 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.355 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.344 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.248 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.324 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.176 seconds.[0m
+[36m----  Could not Read  src/places/core.cljs   line:68  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 68 and column 1[0m
+
+  [36m66[0m  [36m;;   2000)[0m
+  [36m67[0m  [36m[0m
+  [33m68[0m  [1m(defn make-se [][0m
+  [0m  [0m  [33m^--- EOF while reading, starting at line 68 and column 1[0m
+  [36m69[0m  [36m  (go-loop [i 1 [0m
+  [36m70[0m  [36m            j 1][0m
+  [36m71[0m  [36m    (let [dk-response (<! (dk-nat/query-id i))[0m
+
+[36m----  Reader Error : Please see src/places/core.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.281 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.337 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:70  column:3  ----[0m
+
+  [1mWrong number of args (1) passed to cljs.core/swap![0m
+
+  [36m66[0m  [36m;;   2000)[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m(defn make-se [][0m
+  [36m69[0m  [36m(let [counter-i 0][0m
+  [33m70[0m  [1m  (go-loop [i 1 [0m
+  [0m  [0m  [33m  ^--- Wrong number of args (1) passed to cljs.core/swap![0m
+  [36m71[0m  [36m            j 1][0m
+  [36m72[0m  [36m    (let [dk-response (<! (dk-nat/query-id i))[0m
+  [36m73[0m  [36m          dk-id (dk-nat/extract-id dk-response)[0m
+  [36m74[0m  [36m          se-id (se-nat/extract-id (<! (se-nat/query-id j)))[0m
+  [36m75[0m  [36m          entity (<! (se-nat/call-base-entity se-id))][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.376 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.359 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.31 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.312 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.35 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.375 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.27 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.332 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.296 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:25  column:11  ----[0m
+
+  [1mUse of undeclared Var places.core/reduced-lev[0m
+
+  [36m21[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m22[0m  [36m[0m
+  [36m23[0m  [36m[0m
+  [36m24[0m  [36m(defn get-lev-text [xs y][0m
+  [33m25[0m  [1m  (first (reduced-lev xs y)))[0m
+  [0m  [0m  [33m          ^--- Use of undeclared Var places.core/reduced-lev[0m
+  [36m26[0m  [36m[0m
+  [36m27[0m  [36m(defn get-lev-text [xs y][0m
+  [36m28[0m  [36m  (second (reduced-lev xs y)))[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn reduced-lev [xs y][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:27  column:1  ----[0m
+
+  [1mget-lev-text at line 24 is being replaced[0m
+
+  [36m24[0m  [36m(defn get-lev-text [xs y][0m
+  [36m25[0m  [36m  (first (reduced-lev xs y)))[0m
+  [36m26[0m  [36m[0m
+  [33m27[0m  [1m(defn get-lev-text [xs y][0m
+  [0m  [0m  [33m^--- get-lev-text at line 24 is being replaced[0m
+  [36m28[0m  [36m  (second (reduced-lev xs y)))[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn reduced-lev [xs y][0m
+  [36m31[0m  [36m  (reduce[0m
+  [36m32[0m  [36m   (fn [x y] (if (> (second x) (second y)) x y))[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:28  column:12  ----[0m
+
+  [1mUse of undeclared Var places.core/reduced-lev[0m
+
+  [36m24[0m  [36m(defn get-lev-text [xs y][0m
+  [36m25[0m  [36m  (first (reduced-lev xs y)))[0m
+  [36m26[0m  [36m[0m
+  [36m27[0m  [36m(defn get-lev-text [xs y][0m
+  [33m28[0m  [1m  (second (reduced-lev xs y)))[0m
+  [0m  [0m  [33m           ^--- Use of undeclared Var places.core/reduced-lev[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn reduced-lev [xs y][0m
+  [36m31[0m  [36m  (reduce[0m
+  [36m32[0m  [36m   (fn [x y] (if (> (second x) (second y)) x y))[0m
+  [36m33[0m  [36m   (map vector xs (map (fn [x] (metrics/levenshtein x)) xs))))[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.301 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:25  column:11  ----[0m
+
+  [1mUse of undeclared Var places.core/reduced-lev[0m
+
+  [36m21[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m22[0m  [36m[0m
+  [36m23[0m  [36m[0m
+  [36m24[0m  [36m(defn get-lev-text [xs y][0m
+  [33m25[0m  [1m  (first (reduced-lev xs y)))[0m
+  [0m  [0m  [33m          ^--- Use of undeclared Var places.core/reduced-lev[0m
+  [36m26[0m  [36m[0m
+  [36m27[0m  [36m(defn get-lev-number [xs y][0m
+  [36m28[0m  [36m  (second (reduced-lev xs y)))[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn reduced-lev [xs y][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:28  column:12  ----[0m
+
+  [1mUse of undeclared Var places.core/reduced-lev[0m
+
+  [36m24[0m  [36m(defn get-lev-text [xs y][0m
+  [36m25[0m  [36m  (first (reduced-lev xs y)))[0m
+  [36m26[0m  [36m[0m
+  [36m27[0m  [36m(defn get-lev-number [xs y][0m
+  [33m28[0m  [1m  (second (reduced-lev xs y)))[0m
+  [0m  [0m  [33m           ^--- Use of undeclared Var places.core/reduced-lev[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn reduced-lev [xs y][0m
+  [36m31[0m  [36m  (reduce[0m
+  [36m32[0m  [36m   (fn [x y] (if (> (second x) (second y)) x y))[0m
+  [36m33[0m  [36m   (map vector xs (map (fn [x] (metrics/levenshtein x)) xs))))[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 0.295 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:25  column:11  ----[0m
+
+  [1mUse of undeclared Var places.core/reduced-lev[0m
+
+  [36m21[0m  [36m      (.attr {:transform (str "translate(32," (/ height 2) ")")})))[0m
+  [36m22[0m  [36m[0m
+  [36m23[0m  [36m[0m
+  [36m24[0m  [36m(defn get-lev-text [xs y][0m
+  [33m25[0m  [1m  (first (reduced-lev xs y)))[0m
+  [0m  [0m  [33m          ^--- Use of undeclared Var places.core/reduced-lev[0m
+  [36m26[0m  [36m[0m
+  [36m27[0m  [36m(defn get-lev-number [xs y][0m
+  [36m28[0m  [36m  (second (reduced-lev xs y)))[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn reduced-lev [xs y][0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/places/core.cljs   line:28  column:12  ----[0m
+
+  [1mUse of undeclared Var places.core/reduced-lev[0m
+
+  [36m24[0m  [36m(defn get-lev-text [xs y][0m
+  [36m25[0m  [36m  (first (reduced-lev xs y)))[0m
+  [36m26[0m  [36m[0m
+  [36m27[0m  [36m(defn get-lev-number [xs y][0m
+  [33m28[0m  [1m  (second (reduced-lev xs y)))[0m
+  [0m  [0m  [33m           ^--- Use of undeclared Var places.core/reduced-lev[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn reduced-lev [xs y][0m
+  [36m31[0m  [36m  (reduce[0m
+  [36m32[0m  [36m   (fn [x y] (if (> (second x) (second y)) x y))[0m
+  [36m33[0m  [36m   (map vector xs (map (fn [x] (metrics/levenshtein x)) xs))))[0m
+
+[36m----  Compiler Warning : Please see src/places/core.cljs  ----[0m
+[32mSuccessfully compiled "main.js" in 1.012 seconds.[0m
+notifying browser that file changed:  out/goog/deps.js
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.54 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[31mFailed to compile "main.js" in 0.262 seconds.[0m
+[36m----  Could not Read  src/places/core.cljs   line:74  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 74 and column 1[0m
+
+  [36m72[0m  [36m;;   2000)[0m
+  [36m73[0m  [36m[0m
+  [33m74[0m  [1m(defn make-se [][0m
+  [0m  [0m  [33m^--- EOF while reading, starting at line 74 and column 1[0m
+  [36m75[0m  [36m  (go-loop [counter-i 0[0m
+  [36m76[0m  [36m            i 1 [0m
+  [36m77[0m  [36m            j 1][0m
+
+[36m----  Reader Error : Please see src/places/core.cljs  ----[0m
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.526 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.438 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.527 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.403 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.663 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.501 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.528 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.572 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.569 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.384 seconds.[0m
+notifying browser that file changed:  out/places/core.js

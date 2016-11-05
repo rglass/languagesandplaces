@@ -20,7 +20,6 @@
     (.append "g")
       (.attr {:transform (str "translate(32," (/ height 2) ")")})))
 
-
 (defn reduced-lev [xs y]
   (reduce
    (fn [x y] (if (> (second x) (second y)) x y))

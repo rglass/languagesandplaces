@@ -13,13 +13,12 @@
 (strokes/bootstrap)
 
 (def width 960)
-(def height 500)
+(def height 600)
 
 (def svg (-> d3 (.select "#landp-node") (.append "svg")
       (.attr {:width width :height height})
     (.append "g")
       (.attr {:transform (str "translate(32," (/ height 2) ")")})))
-
 
 (defn reduced-lev [xs y]
   (reduce

@@ -6,7 +6,7 @@
             [cljs-http.client :as http]
             [cljs.core.async :refer [<! chan put! >!]]))
 
-(def base-url "https://samlinger.natmus.dk")
+(def base-url "http://samlinger.natmus.dk")
 (def default-collection "ES")
 (def search-suffix "/api/all/_search?q=")
 

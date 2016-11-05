@@ -1,4 +1,4 @@
-GET http://samlinger.natmus.dk/api/all/_search?q=_type:object&collection:es&size=1&from=2&media=picture
+GET https://samlinger.natmus.dk/api/all/_search?q=_type:object&collection:es&size=1&from=2&media=picture
 
 #
 #

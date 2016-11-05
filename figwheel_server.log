@@ -21942,3 +21942,15 @@ notifying browser that file changed:  out/places/core.js
 [0mCompiling "main.js" from ["src/"]...[0m
 [32mSuccessfully compiled "main.js" in 0.384 seconds.[0m
 notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.871 seconds.[0m
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.769 seconds.[0m
+notifying browser that file changed:  out/goog/deps.js
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/core.js
+[0mCompiling "main.js" from ["src/"]...[0m
+[32mSuccessfully compiled "main.js" in 0.818 seconds.[0m
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  out/places/dk/natmus.js

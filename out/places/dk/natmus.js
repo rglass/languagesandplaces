@@ -23,4 +23,4 @@ places.dk.natmus.extract_tags = (function places$dk$natmus$extract_tags(response
 return new cljs.core.Keyword(null,"tags","tags",1771418977).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"_source","_source",-812884485).cljs$core$IFn$_invoke$arity$1(cljs.core.nth.call(null,new cljs.core.Keyword(null,"hits","hits",-2120002930).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"hits","hits",-2120002930).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"body","body",-2049205669).cljs$core$IFn$_invoke$arity$1(response))),(0))));
 });
 
-//# sourceMappingURL=natmus.js.map?rel=1478134423935
+//# sourceMappingURL=natmus.js.map?rel=1478377249601

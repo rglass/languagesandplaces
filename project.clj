@@ -17,7 +17,8 @@
             [lein-figwheel "0.5.7"]]
   :npm {:dependencies [[source-map-support "0.4.0"]]}
   :source-paths ["src" "target/classes"]
-  :asset-path "/out"
+  :asset-path "out"
+  :optimizations :advanced
   :clean-targets ["out" "release"]
   :target-path "target"
   :cljsbuild {
